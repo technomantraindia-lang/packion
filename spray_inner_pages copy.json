@@ -1,0 +1,351 @@
+{
+    "sprayPages": [
+        {
+            "pageTitle": "Spray Nozzles",
+            "pageSlug": "spray-nozzles",
+            "intro": "High-precision spray nozzles designed for industrial efficiency and reliability.",
+            "heroImage": "spray/Spray_Nozzles_1.png",
+            "diagramImage": "spray/Controllers_3.png",
+            "caseStudyImage": "spray/Spray_Nozzles_3.png",
+            "galleryImages": [
+                "spray/Spray_Nozzles_1.png",
+                "spray/Spray_Nozzles_2.png",
+                "spray/Spray_Nozzles_3.png"
+            ],
+            "features": [
+                {
+                    "title": "Uniform spray distribution",
+                    "desc": "Specially engineered design optimized to improve coverage uniformity and prevent fluid pooling.",
+                    "image": "spray/Lubrication_Spray_Systems_1.png"
+                },
+                {
+                    "title": "Durable materials",
+                    "desc": "Manufactured from hardened alloys and stainless steel to resist wear and abrasive chemicals.",
+                    "image": "spray/Controllers_3.png"
+                },
+                {
+                    "title": "Customizable angles",
+                    "desc": "Available in flat fan, full cone, and hollow cone spray patterns up to 120 degrees.",
+                    "image": "spray/AutoJet_Automated_Systems_5.png"
+                },
+                {
+                    "title": "Easy maintenance",
+                    "desc": "Modular tip designs allow quick cleaning and replacement without pipe disassembly.",
+                    "image": "spray/Spray_Nozzles_2.png"
+                }
+            ],
+            "applications": [
+                {
+                    "title": "Automotive assembly",
+                    "desc": "High-impact chassis pre-treatment and spray washing in preparation for painting.",
+                    "image": "spray/Spray_Nozzles_1.png"
+                },
+                {
+                    "title": "Electronics cooling",
+                    "desc": "Micro-atomized spray mists to cool high-temperature components during manufacturing.",
+                    "image": "spray/AutoJet_Automated_Systems_5.png"
+                },
+                {
+                    "title": "Industrial lubrication",
+                    "desc": "Drip-free application of stamping oils and release agents on fast-moving conveyors.",
+                    "image": "spray/Lubrication_Spray_Systems_2.png"
+                },
+                {
+                    "title": "Fire protection",
+                    "desc": "Wide-angle emergency spray barriers for high-risk plant storage environments.",
+                    "image": "spray/Spray_Nozzles_2.png"
+                }
+            ]
+        },
+        {
+            "pageTitle": "Automatic Spray Nozzles",
+            "pageSlug": "automatic-spray-nozzles",
+            "intro": "Fully automated spray nozzle systems for precise control in industrial processes.",
+            "heroImage": "spray/Automatic_Spray_Nozzles_1.png",
+            "diagramImage": "spray/Automatic_Spray_Nozzles_3.png",
+            "caseStudyImage": "spray/Automatic_Spray_Nozzles_2.png",
+            "galleryImages": [
+                "spray/Automatic_Spray_Nozzles_1.png",
+                "spray/Automatic_Spray_Nozzles_2.png",
+                "spray/Automatic_Spray_Nozzles_3.png",
+                "spray/automated_spray_system_in_factory.png"
+            ],
+            "features": [
+                {
+                    "title": "Programmable spray cycles",
+                    "desc": "Advanced solenoid valve triggers allow ultra-fast pulsing synced with conveyor speed.",
+                    "image": "spray/Automatic_Spray_Nozzles_1.png"
+                },
+                {
+                    "title": "Consistent output",
+                    "desc": "Delivers the exact same volume of liquid block-by-block with zero variance.",
+                    "image": "spray/Lubrication_Spray_Systems_1.png"
+                },
+                {
+                    "title": "High-speed operation",
+                    "desc": "Operates at up to 10,000 cycles per minute for modern automated production lines.",
+                    "image": "spray/Automatic_Spray_Nozzles_2.png"
+                },
+                {
+                    "title": "Energy efficient",
+                    "desc": "Reduces fluid wastage by up to 50% by atomizing only when components are detected.",
+                    "image": "spray/automated_spraying_system_in_factory.png"
+                }
+            ],
+            "applications": [
+                {
+                    "title": "Robotic manufacturing lines",
+                    "desc": "Fully synchronized spray runs matched with robotic arm movements and timing.",
+                    "image": "spray/Lubrication_Spray_Systems_3.png"
+                },
+                {
+                    "title": "Automotive painting",
+                    "desc": "Provides precision atomized paint and clear coat mists for uniform body finishes.",
+                    "image": "spray/Spray_Nozzles_2.png"
+                },
+                {
+                    "title": "Lubrication systems",
+                    "desc": "Fast pulsed spray of lubricant exactly on stamping dies during press operations.",
+                    "image": "spray/Automatic_Spray_Nozzles_2.png"
+                },
+                {
+                    "title": "Dust suppression",
+                    "desc": "Controlled water mist barriers to reduce ambient particles in raw material zones.",
+                    "image": "spray/automated_spray_system_in_factory.png"
+                }
+            ]
+        },
+        {
+            "pageTitle": "Lubrication Spray Systems",
+            "pageSlug": "lubrication-spray-systems",
+            "intro": "Industrial lubrication systems engineered for maximum equipment performance and lifespan.",
+            "heroImage": "spray/Lubrication_Spray_Systems_1.png",
+            "diagramImage": "spray/AutoJet_Automated_Systems_4.png",
+            "caseStudyImage": "spray/Lubrication_Spray_Systems_2.png",
+            "galleryImages": [
+                "spray/Lubrication_Spray_Systems_1.png",
+                "spray/Lubrication_Spray_Systems_2.png",
+                "spray/Lubrication_Spray_Systems_3.png"
+            ],
+            "features": [
+                {
+                    "title": "Customizable spray patterns",
+                    "desc": "Multi-zone nozzle arrays adjustable to suit varying metal shapes and widths.",
+                    "image": "spray/Lubrication_Spray_Systems_1.png"
+                },
+                {
+                    "title": "Efficient lubricant usage",
+                    "desc": "Controlled pumps dose exact fluid weights, saving lubricants and preventing pooling.",
+                    "image": "spray/AutoJet_Automated_Systems_4.png"
+                },
+                {
+                    "title": "Minimal downtime",
+                    "desc": "Auto-flush mechanisms purge chemical residues, preventing nozzle blockage and maintenance stops.",
+                    "image": "spray/Lubrication_Spray_Systems_2.png"
+                },
+                {
+                    "title": "Safe and precise application",
+                    "desc": "Enclosed spray hoods block mist from escaping, maintaining plant floor safety.",
+                    "image": "spray/Lubrication_Spray_Systems_3.png"
+                }
+            ],
+            "applications": [
+                {
+                    "title": "Assembly lines",
+                    "desc": "Automated oiling of joints, hinges, and chassis segments in continuous cycles.",
+                    "image": "spray/Lubrication_Spray_Systems_3.png"
+                },
+                {
+                    "title": "Machinery maintenance",
+                    "desc": "Pulsed chain and gear spray lines keeping gearboxes running under peak loads.",
+                    "image": "spray/Automatic_Spray_Nozzles_2.png"
+                },
+                {
+                    "title": "Metal processing",
+                    "desc": "Continuous oil drawing layers applied on rolling mills during steel formatting.",
+                    "image": "spray/Lubrication_Spray_Systems_2.png"
+                },
+                {
+                    "title": "Automotive manufacturing",
+                    "desc": "Stamping and punch press die lubrication in deep draw body operations.",
+                    "image": "spray/AutoJet_Automated_Systems_4.png"
+                }
+            ]
+        },
+        {
+            "pageTitle": "Spray Headers & Manifolds",
+            "pageSlug": "spray-headers-manifolds",
+            "intro": "Advanced spray distribution systems for consistent coverage and reliability.",
+            "heroImage": "spray/Controllers_1.png",
+            "diagramImage": "spray/Automatic_Spray_Nozzles_3.png",
+            "caseStudyImage": "spray/AutoJet_Automated_Systems_1.png",
+            "galleryImages": [
+                "spray/Controllers_1.png",
+                "spray/Automatic_Spray_Nozzles_3.png",
+                "spray/AutoJet_Automated_Systems_1.png",
+                "spray/AutoJet_Automated_Systems_3.png"
+            ],
+            "features": [
+                {
+                    "title": "Modular design",
+                    "desc": "Interchangeable manifold lengths and nozzle mounts allowing quick design upgrades.",
+                    "image": "spray/Controllers_1.png"
+                },
+                {
+                    "title": "High-pressure operation",
+                    "desc": "Fabricated with heavy-gauge stainless steel to handle up to 60 bar system pressures.",
+                    "image": "spray/Automatic_Spray_Nozzles_3.png"
+                },
+                {
+                    "title": "Durable construction",
+                    "desc": "Corrosion-resistant framework suited for high-temperature and acid wash tunnels.",
+                    "image": "spray/AutoJet_Automated_Systems_1.png"
+                },
+                {
+                    "title": "Uniform spray flow",
+                    "desc": "Internal chambers equalize pressure across all nozzles for uniform coverage.",
+                    "image": "spray/AutoJet_Automated_Systems_3.png"
+                }
+            ],
+            "applications": [
+                {
+                    "title": "Chemical processing",
+                    "desc": "Wide headers spraying chemical washes or cooling agents over continuous reactor trays.",
+                    "image": "spray/AutoJet_Automated_Systems_1.png"
+                },
+                {
+                    "title": "Cooling systems",
+                    "desc": "Multi-nozzle manifolds spraying high-volume water mists on hot metal rolls.",
+                    "image": "spray/AutoJet_Automated_Systems_3.png"
+                },
+                {
+                    "title": "Lubrication lines",
+                    "desc": "Wide spray headers distributing stamping oils evenly over raw steel sheets.",
+                    "image": "spray/Lubrication_Spray_Systems_2.png"
+                },
+                {
+                    "title": "Fire suppression",
+                    "desc": "High-flow safety manifolds to create instant water curtains in chemical bays.",
+                    "image": "spray/Controllers_1.png"
+                }
+            ]
+        },
+        {
+            "pageTitle": "Controllers",
+            "pageSlug": "spray-controllers",
+            "intro": "Intelligent control units for precise management of spray systems and automation.",
+            "heroImage": "spray/Controllers_2.png",
+            "diagramImage": "spray/Spray_Nozzles_3.png",
+            "caseStudyImage": "spray/Automatic_Spray_Nozzles_1.png",
+            "galleryImages": [
+                "spray/Controllers_2.png",
+                "spray/Spray_Nozzles_3.png",
+                "spray/Automatic_Spray_Nozzles_1.png"
+            ],
+            "features": [
+                {
+                    "title": "Digital interface",
+                    "desc": "Intuitive touchscreen HMI displaying diagnostics, pulse rates, and pressures.",
+                    "image": "spray/Controllers_2.png"
+                },
+                {
+                    "title": "Programmable schedules",
+                    "desc": "Set automation timers, sensor delays, and fluid flush cycles from one panel.",
+                    "image": "spray/Spray_Nozzles_3.png"
+                },
+                {
+                    "title": "Remote monitoring",
+                    "desc": "Supports Modbus, Ethernet, and RS-485 to feed real-time logs to central control rooms.",
+                    "image": "spray/Automatic_Spray_Nozzles_1.png"
+                },
+                {
+                    "title": "Fault detection",
+                    "desc": "Instantly triggers alarms and shutdowns if pressure drops or nozzle clogging occurs.",
+                    "image": "spray/Controllers_2.png"
+                }
+            ],
+            "applications": [
+                {
+                    "title": "Automated spray lines",
+                    "desc": "Monitors photo-sensors to fire spray nozzles only when components are detected.",
+                    "image": "spray/Spray_Nozzles_3.png"
+                },
+                {
+                    "title": "Lubrication control",
+                    "desc": "Coordinates pulse timing and volume delivery to stamping press heads.",
+                    "image": "spray/Automatic_Spray_Nozzles_1.png"
+                },
+                {
+                    "title": "Cooling operations",
+                    "desc": "Maintains nozzle pressures based on thermal sensor feedback from processing lines.",
+                    "image": "spray/Controllers_2.png"
+                },
+                {
+                    "title": "Industrial fluid management",
+                    "desc": "Automates flow regulation, pump outputs, and chemical ratio mixes.",
+                    "image": "spray/AutoJet_Automated_Systems_4.png"
+                }
+            ]
+        },
+        {
+            "pageTitle": "AutoJet Automated Systems",
+            "pageSlug": "autojet-automated-systems",
+            "intro": "Turnkey automated spray solutions for complex industrial processes.",
+            "heroImage": "spray/AutoJet_Automated_Systems_4.png",
+            "diagramImage": "spray/AutoJet_Automated_Systems_4.png",
+            "caseStudyImage": "spray/automated_spray_system_in_factory.png",
+            "galleryImages": [
+                "spray/AutoJet_Automated_Systems_1.png",
+                "spray/AutoJet_Automated_Systems_2.png",
+                "spray/AutoJet_Automated_Systems_3.png",
+                "spray/AutoJet_Automated_Systems_4.png",
+                "spray/AutoJet_Automated_Systems_5.png",
+                "spray/AutoJet_Automated_Systems_6.png"
+            ],
+            "features": [
+                {
+                    "title": "Seamless integration",
+                    "desc": "Combines tanks, pumps, filters, controllers, and nozzles into one pre-piped system.",
+                    "image": "spray/AutoJet_Automated_Systems_4.png"
+                },
+                {
+                    "title": "Precision spraying",
+                    "desc": "Maintains perfect atomization and drip-free flow rates matching variable line speeds.",
+                    "image": "spray/AutoJet_Automated_Systems_1.png"
+                },
+                {
+                    "title": "Optimized efficiency",
+                    "desc": "Saves up to 60% on fluids by regulating spray pulsing down to micro-dosing levels.",
+                    "image": "spray/AutoJet_Automated_Systems_5.png"
+                },
+                {
+                    "title": "Minimal human intervention",
+                    "desc": "Self-monitoring systems handle pump control, filter purges, and self-cleaning runs.",
+                    "image": "spray/AutoJet_Automated_Systems_6.png"
+                }
+            ],
+            "applications": [
+                {
+                    "title": "Automotive assembly",
+                    "desc": "Complete press stamping lubricant automation for high-volume body parts.",
+                    "image": "spray/automated_spray_system_in_factory.png"
+                },
+                {
+                    "title": "Electronics manufacturing",
+                    "desc": "Automated precision flux and protective coating sprays over circuit assemblies.",
+                    "image": "spray/AutoJet_Automated_Systems_2.png"
+                },
+                {
+                    "title": "Packaging lubrication",
+                    "desc": "Turnkey release agent application on food conveyor belts or package folds.",
+                    "image": "spray/AutoJet_Automated_Systems_3.png"
+                },
+                {
+                    "title": "Dust and fire protection",
+                    "desc": "Automated sensor-triggered plant dust barriers and deluge safety cycles.",
+                    "image": "spray/automated_spraying_system_in_factory.png"
+                }
+            ]
+        }
+    ]
+}

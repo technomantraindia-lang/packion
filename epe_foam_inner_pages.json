@@ -1,0 +1,612 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "title": "EPE Foam Packaging",
+      "hero": {
+        "headline": "Precision EPE Foam Packaging",
+        "subtitle": "Custom EPE foam solutions for industrial components",
+        "description": "High-quality EPE foam packaging for automotive, electronics, tooling, and industrial components.",
+        "image": "innerpages images/Epe fome .png",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About EPE Foam Packaging",
+        "content": "Our EPE foam solutions provide superior protection, impact resistance, and custom fit for delicate industrial components. Ideal for shipping, storage, and transport."
+      },
+      "overviewImage": "innerpages images/Epe fome-2.webp",
+      "specsImage": "innerpages images/Epe fome -3.jpg",
+      "featureImages": [
+        "innerpages images/Epe fome-2.webp",
+        "innerpages images/Epe fome -3.jpg",
+        "innerpages images/Epe fome .png",
+        "innerpages images/Epe fome-2.webp"
+      ],
+      "applicationImages": [
+        "innerpages images/Epe fome .png",
+        "innerpages images/Epe fome -3.jpg",
+        "innerpages images/Epe fome-2.webp",
+        "innerpages images/Epe fome .png"
+      ],
+      "features": [
+        "Impact Protection",
+        "Custom Cut Foam",
+        "Antistatic Options",
+        "Reusable Dunnage"
+      ],
+      "applications": [
+        "Automotive",
+        "Electronics",
+        "Tooling",
+        "Industrial Components"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "Expanded Polyethylene (EPE)"
+        },
+        {
+          "name": "Density Range",
+          "value": "15-30 kg/m\u00b3"
+        },
+        {
+          "name": "Custom Cuts",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "XLPE Foam Packaging",
+      "hero": {
+        "headline": "XLPE Foam Solutions",
+        "subtitle": "Durable foam protection for sensitive components",
+        "description": "XLPE foam designed for high impact resistance and long-lasting durability.",
+        "image": "innerpages images/XLPE.png",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About XLPE Foam Packaging",
+        "content": "XLPE foam provides excellent cushioning and protection for delicate or heavy components. Perfect for industrial transport and long-term storage."
+      },
+      "overviewImage": "innerpages images/XLPE -2.jpg",
+      "specsImage": "innerpages images/XLPE.png",
+      "featureImages": [
+        "innerpages images/XLPE -2.jpg",
+        "innerpages images/XLPE.png",
+        "innerpages images/XLPE -2.jpg",
+        "innerpages images/XLPE.png"
+      ],
+      "applicationImages": [
+        "innerpages images/XLPE.png",
+        "innerpages images/XLPE -2.jpg",
+        "innerpages images/XLPE.png",
+        "innerpages images/XLPE -2.jpg"
+      ],
+      "features": [
+        "High Durability",
+        "Custom Shape Options",
+        "Recyclable Material",
+        "Lightweight Protection"
+      ],
+      "applications": [
+        "Automotive",
+        "Electronics",
+        "Industrial Machines",
+        "Tool Kits"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "Cross-linked Polyethylene (XLPE)"
+        },
+        {
+          "name": "Density Range",
+          "value": "20-40 kg/m\u00b3"
+        },
+        {
+          "name": "Custom Cuts",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "PU Foam Packaging",
+      "hero": {
+        "headline": "Reliable PU Foam Packaging",
+        "subtitle": "Impact and vibration protection for industrial components",
+        "description": "Custom PE foam solutions designed for protection, cushioning, and efficient storage.",
+        "image": "innerpages images/pu fome packging.jpg",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About PU Foam Packaging",
+        "content": "PE foam offers lightweight, flexible, and protective packaging ideal for sensitive industrial components during transport and storage."
+      },
+      "overviewImage": "innerpages images/pu fome packging-2.avif",
+      "specsImage": "innerpages images/pu fome packging-3.jpg",
+      "featureImages": [
+        "innerpages images/pu fome packging-2.avif",
+        "innerpages images/pu fome packging-3.jpg",
+        "innerpages images/pu fome packging.jpg",
+        "innerpages images/pu fome packging-2.avif"
+      ],
+      "applicationImages": [
+        "innerpages images/pu fome packging.jpg",
+        "innerpages images/pu fome packging-3.jpg",
+        "innerpages images/pu fome packging-2.avif",
+        "innerpages images/pu fome packging.jpg"
+      ],
+      "features": [
+        "Lightweight Material",
+        "Shock Absorption",
+        "Custom Designs",
+        "Reusable"
+      ],
+      "applications": [
+        "Automotive",
+        "Electronics",
+        "Consumer Goods",
+        "Tooling"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "Polyethylene (PE)"
+        },
+        {
+          "name": "Density Range",
+          "value": "10-25 kg/m\u00b3"
+        },
+        {
+          "name": "Custom Cuts",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Antistatic Foam Packaging",
+      "hero": {
+        "headline": "Antistatic Foam Packaging",
+        "subtitle": "Protect your sensitive electronic components",
+        "description": "Electrostatic-safe foam solutions for electronics and sensitive industrial parts.",
+        "image": "innerpages images/Antistatic Foam Packaging.png",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About Antistatic Foam",
+        "content": "Specialized foam designed to prevent electrostatic discharge (ESD) damage, ideal for electronics and sensitive components."
+      },
+      "overviewImage": "innerpages images/Antistatic Foam Packaging-2.png",
+      "specsImage": "innerpages images/Antistatic Foam Packaging-3.jpg",
+      "featureImages": [
+        "innerpages images/Antistatic Foam Packaging-2.png",
+        "innerpages images/Antistatic Foam Packaging-3.jpg",
+        "innerpages images/Antistatic Foam Packaging.png",
+        "innerpages images/Antistatic Foam Packaging-2.png"
+      ],
+      "applicationImages": [
+        "innerpages images/Antistatic Foam Packaging.png",
+        "innerpages images/Antistatic Foam Packaging-3.jpg",
+        "innerpages images/Antistatic Foam Packaging-2.png",
+        "innerpages images/Antistatic Foam Packaging.png"
+      ],
+      "features": [
+        "ESD Safe",
+        "Custom Cuts",
+        "Impact Resistant",
+        "Reusable"
+      ],
+      "applications": [
+        "Electronics",
+        "Circuit Boards",
+        "Industrial Sensors",
+        "Medical Devices"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "Antistatic Polyethylene Foam"
+        },
+        {
+          "name": "Density Range",
+          "value": "15-25 kg/m\u00b3"
+        },
+        {
+          "name": "Custom Cuts",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Automotive Dunnage",
+      "hero": {
+        "headline": "Automotive Dunnage Solutions",
+        "subtitle": "Custom foam for automotive component protection",
+        "description": "Protect critical automotive parts with precision-engineered foam packaging.",
+        "image": "innerpages images/automotive dannage.png",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About Automotive Dunnage",
+        "content": "Our automotive dunnage foam is designed to securely hold components during transport and assembly, preventing damage and vibration."
+      },
+      "overviewImage": "innerpages images/automotive dannage-2.webp",
+      "specsImage": "innerpages images/automotive dannage-3.jpg",
+      "featureImages": [
+        "innerpages images/automotive dannage-2.webp",
+        "innerpages images/automotive dannage-3.jpg",
+        "innerpages images/automotive dannage.png",
+        "innerpages images/automotive dannage-2.webp"
+      ],
+      "applicationImages": [
+        "innerpages images/automotive dannage.png",
+        "innerpages images/automotive dannage-3.jpg",
+        "innerpages images/automotive dannage-2.webp",
+        "innerpages images/automotive dannage.png"
+      ],
+      "features": [
+        "Custom Fit",
+        "Impact Resistant",
+        "Lightweight",
+        "Reusable"
+      ],
+      "applications": [
+        "Automotive Components",
+        "Engine Parts",
+        "Suspension Systems",
+        "Electronics Modules"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "EPE / PE Foam"
+        },
+        {
+          "name": "Custom Cuts",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Trolley Dunnage",
+      "hero": {
+        "headline": "Trolley Foam Packaging",
+        "subtitle": "Efficient transport and storage protection",
+        "description": "Custom foam trays for trolleys and mobile storage units.",
+        "image": "innerpages images/trolly dannage.png",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About Trolley Dunnage",
+        "content": "Foam designed to fit trolleys perfectly, keeping products safe from shocks and vibrations during transport within factories or warehouses."
+      },
+      "overviewImage": "innerpages images/trolly dannage-2.jpg",
+      "specsImage": "innerpages images/trolly dannage-3.png",
+      "featureImages": [
+        "innerpages images/trolly dannage-2.jpg",
+        "innerpages images/trolly dannage-3.png",
+        "innerpages images/trolly dannage.png",
+        "innerpages images/trolly dannage-2.jpg"
+      ],
+      "applicationImages": [
+        "innerpages images/trolly dannage.png",
+        "innerpages images/trolly dannage-3.png",
+        "innerpages images/trolly dannage-2.jpg",
+        "innerpages images/trolly dannage.png"
+      ],
+      "features": [
+        "Custom Trays",
+        "Impact Resistant",
+        "Lightweight",
+        "Reusable"
+      ],
+      "applications": [
+        "Manufacturing",
+        "Warehouse",
+        "Assembly Lines",
+        "Tooling"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "EPE / PE Foam"
+        },
+        {
+          "name": "Custom Trays",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Tool Kit Foam Packaging",
+      "hero": {
+        "headline": "Tool Kit Foam Packaging",
+        "subtitle": "Protective foam for tools and kits",
+        "description": "Custom foam solutions to hold tools safely in kits or trays.",
+        "image": "innerpages images/toll kit.jpeg",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About Tool Kit Foam",
+        "content": "Foam inserts designed to hold tools securely, preventing scratches, movement, or impact damage during storage and transport."
+      },
+      "overviewImage": "innerpages images/toll kit-2.jpg",
+      "specsImage": "innerpages images/toll kit.jpeg",
+      "featureImages": [
+        "innerpages images/toll kit-2.jpg",
+        "innerpages images/toll kit.jpeg",
+        "innerpages images/toll kit-2.jpg",
+        "innerpages images/toll kit.jpeg"
+      ],
+      "applicationImages": [
+        "innerpages images/toll kit.jpeg",
+        "innerpages images/toll kit-2.jpg",
+        "innerpages images/toll kit.jpeg",
+        "innerpages images/toll kit-2.jpg"
+      ],
+      "features": [
+        "Custom Inserts",
+        "Impact Resistant",
+        "Lightweight",
+        "Reusable"
+      ],
+      "applications": [
+        "Tool Kits",
+        "Hardware Storage",
+        "Industrial Components"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "EPE / PE Foam"
+        },
+        {
+          "name": "Custom Cuts",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Defence Packaging",
+      "hero": {
+        "headline": "Defence Packaging",
+        "subtitle": "High-Performance Protective Solutions",
+        "description": "Designed for critical equipment safety and heavy-duty impact protection.",
+        "image": "innerpages images/Defence Packaging.png",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About Defence Packaging",
+        "content": "Defence packaging solutions engineered for safely packaging, stacking, and transporting heavy ammunition, sensitive equipment, and critical components in extreme environments."
+      },
+      "overviewImage": "innerpages images/Defence Packaging-2.jpeg",
+      "specsImage": "innerpages images/Defence Packaging-3.webp",
+      "featureImages": [
+        "innerpages images/Defence Packaging-2.jpeg",
+        "innerpages images/Defence Packaging-3.webp",
+        "innerpages images/Defence Packaging.png",
+        "innerpages images/Defence Packaging-2.jpeg",
+        "innerpages images/Defence Packaging-3.webp",
+        "innerpages images/Defence Packaging.png"
+      ],
+      "applicationImages": [
+        "innerpages images/Defence Packaging.png",
+        "innerpages images/Defence Packaging-3.webp",
+        "innerpages images/Defence Packaging-2.jpeg",
+        "innerpages images/Defence Packaging.png"
+      ],
+      "features": [
+        "Heavy-duty impact protection",
+        "Precision-cut foam dunnage",
+        "Antistatic XLPE foam (10⁹ Ohm)",
+        "Moisture & dust resistant",
+        "Reusable rugged crate system",
+        "Designed for critical equipment safety"
+      ],
+      "applications": [
+        "Military Hardware",
+        "Ammunition & Explosives",
+        "Sensitive Communication Equipment",
+        "Aerospace Components"
+      ],
+      "specifications": [
+        {
+          "name": "Density",
+          "value": "150 kg/m³"
+        },
+        {
+          "name": "Material",
+          "value": "High-Density XLPE / PE Foam"
+        },
+        {
+          "name": "Custom Cuts",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+
+    {
+      "id": 10,
+      "title": "Protective Foam Packaging",
+      "hero": {
+        "headline": "Protective Foam Packaging",
+        "subtitle": "Ultimate protection for industrial components",
+        "description": "High-quality foam solutions to safeguard products from damage.",
+        "image": "innerpages images/protective_foam_img_1780571268641.png",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About Protective Foam Packaging",
+        "content": "Engineered foam packaging to absorb shocks, prevent scratches, and provide secure storage for all industrial components."
+      },
+      "overviewImage": "innerpages images/protective_foam_img_1780571268641.png",
+      "specsImage": "innerpages images/protective_foam_img_1780571268641.png",
+      "featureImages": [
+        "innerpages images/protective_foam_img_1780571268641.png",
+        "innerpages images/protective_foam_img_1780571268641.png",
+        "innerpages images/protective_foam_img_1780571268641.png",
+        "innerpages images/protective_foam_img_1780571268641.png"
+      ],
+      "applicationImages": [
+        "innerpages images/protective_foam_img_1780571268641.png",
+        "innerpages images/protective_foam_img_1780571268641.png",
+        "innerpages images/protective_foam_img_1780571268641.png",
+        "innerpages images/protective_foam_img_1780571268641.png"
+      ],
+      "features": [
+        "Impact Protection",
+        "Custom Inserts",
+        "Reusable",
+        "Lightweight"
+      ],
+      "applications": [
+        "Automotive",
+        "Electronics",
+        "Tooling",
+        "Industrial Components"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "EPE / PE Foam"
+        },
+        {
+          "name": "Custom Cuts",
+          "value": "Available"
+        },
+        {
+          "name": "Reusable",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Gasket",
+      "hero": {
+        "headline": "Custom Industrial Gaskets",
+        "subtitle": "Dummy gasket sealing solutions for industrial assemblies",
+        "description": "Placeholder content for gasket products used in sealing, spacing, cushioning, and industrial component protection.",
+        "image": "innerpages images/gaskets.png",
+        "cta": [
+          "Explore Products",
+          "View Applications"
+        ]
+      },
+      "about": {
+        "heading": "About Gasket",
+        "content": "This is dummy content for a gasket inner page. The final page can describe custom-cut gasket materials, sealing performance, dimensional accuracy, and application-specific production options."
+      },
+      "overviewImage": "innerpages images/gaskets-2.jpg",
+      "specsImage": "innerpages images/gaskets-3.jpg",
+      "featureImages": [
+        "innerpages images/gaskets-2.jpg",
+        "innerpages images/gaskets-3.jpg",
+        "innerpages images/gaskets.png",
+        "innerpages images/gaskets-2.jpg"
+      ],
+      "applicationImages": [
+        "innerpages images/gaskets.png",
+        "innerpages images/gaskets-3.jpg",
+        "innerpages images/gaskets-2.jpg",
+        "innerpages images/gaskets.png"
+      ],
+      "features": [
+        "Custom Cut Profiles",
+        "Sealing Support",
+        "Industrial Fitment",
+        "Material Options"
+      ],
+      "applications": [
+        "Automotive Assemblies",
+        "Industrial Equipment",
+        "Electrical Enclosures",
+        "Machine Components"
+      ],
+      "specifications": [
+        {
+          "name": "Material Type",
+          "value": "Dummy gasket material"
+        },
+        {
+          "name": "Thickness Range",
+          "value": "To be specified"
+        },
+        {
+          "name": "Custom Cutting",
+          "value": "Available"
+        },
+        {
+          "name": "Application",
+          "value": "Sealing / spacing / cushioning"
+        }
+      ]
+    }
+  ]
+}

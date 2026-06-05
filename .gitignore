@@ -1,0 +1,4 @@
+# Local archives and OS metadata
+*.zip
+Thumbs.db
+.DS_Store

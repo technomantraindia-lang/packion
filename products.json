@@ -1,0 +1,63 @@
+{
+    "epe-foam": {
+        "name": "EPE Foam Packaging",
+        "tagline": "Lightweight, flexible and shock-absorbing foam for industrial components",
+        "overview": "EPE Foam Packaging provides lightweight and shock-absorbing protection for automotive, electronics, tooling, and industrial components. Designed for storage, handling, and transportation efficiency.",
+        "heroImage": "",
+        "overviewImage": "",
+        "specsImage": "",
+        "features": [
+            {
+                "title": "Custom Cut Foam Inserts",
+                "description": "Precision cavities tailormade to hold components securely and prevent movement.",
+                "iconSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><rect x='3' y='3' width='18' height='18' rx='2'/><path d='M9 17V9h6v8'/></svg>"
+            },
+            {
+                "title": "Reusable Dunnage",
+                "description": "Highly durable configurations for internal plant transit loops and repeated handling.",
+                "iconSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><path d='M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l.73-1.19'/></svg>"
+            },
+            {
+                "title": "Antistatic Foam for Electronics",
+                "description": "Safe, static-dissipative foam inserts for electronic modules and sensitive PCBs.",
+                "iconSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>"
+            },
+            {
+                "title": "Automotive Component Protection",
+                "description": "Absorbs vibration and impact during transit, keeping automotive finishes scratch-free.",
+                "iconSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><rect x='1' y='9' width='22' height='9' rx='2'/><path d='M5 9V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3'/><circle cx='6' cy='18' r='2'/><circle cx='18' cy='18' r='2'/></svg>"
+            }
+        ],
+        "specs": {
+            "Material": "Expanded Polyethylene (EPE)",
+            "Density": "25 kg/m³",
+            "Color": "White / Pink (Antistatic) / Grey",
+            "Size Options": "Custom sized to container / box dimensions",
+            "Weight Capacity": "Light to medium industrial components",
+            "Custom Options": "Custom cavity routing, multi-layer laminations, antistatic additives"
+        },
+        "applications": [
+            {
+                "title": "Automotive parts protection",
+                "description": "Tailor-fit protection for mirrors, instrument panels, lights, and engines during factory loop transit.",
+                "iconSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><path d='M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2'/><circle cx='7' cy='17' r='2'/><path d='M9 17h6'/><circle cx='17' cy='17' r='2'/></svg>"
+            },
+            {
+                "title": "Electronics packaging",
+                "description": "Antistatic EPE cushion boxes and trays protect circuits, assemblies, and microchips from electrostatic shocks.",
+                "iconSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><rect x='2' y='2' width='20' height='20' rx='2' ry='2'/><path d='M6 6h12v12H6z'/></svg>"
+            },
+            {
+                "title": "Tool and kit inserts",
+                "description": "Shadow board organization inserts keep heavy measuring tool kits and instruments safe and neatly accessible.",
+                "iconSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><path d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/></svg>"
+            },
+            {
+                "title": "Industrial components shipping",
+                "description": "Protects precision-machined gears, bearings, and modules from collisions during domestic and global freight.",
+                "iconSvg": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8'><rect x='1' y='3' width='15' height='13'/><polygon points='16 8 20 8 23 11 23 16 16 16 16 8'/><circle cx='5.5' cy='18.5' r='2.5'/><circle cx='18.5' cy='18.5' r='2.5'/></svg>"
+            }
+        ],
+        "ctaText": "Tell us your application or component requirements and our team will recommend the right EPE foam solution."
+    }
+}

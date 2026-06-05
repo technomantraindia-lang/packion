@@ -1,0 +1,620 @@
+/* ==========================================================
+   PRODUCTS PAGE — PAGE-SPECIFIC STYLES
+   products.css
+   Shared site styles (header, footer, base) live in style.css
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   GENERAL WRAPPERS
+   ---------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+.products-main-content {
+    width: 100%;
+    background: #ffffff;
+}
+
+/* ----------------------------------------------------------
+   SECTION 1 — PREMIUM PRODUCT HERO
+   Dark themed with massive background watermark text
+   ---------------------------------------------------------- */
+.pw-hero-section {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(160deg, #0a2540 0%, #0d3158 35%, #082035 70%, #061a2c 100%);
+    padding: 140px 60px 80px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Massive Background Watermark Text ── */
+.pw-hero-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 220px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.04);
+    letter-spacing: 30px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+/* ── Animated Geometric Shapes ── */
+.pw-hero-shape {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pw-shape-1 {
+    width: 450px;
+    height: 450px;
+    top: -120px;
+    right: -80px;
+    background: radial-gradient(circle, rgba(6, 90, 152, 0.15) 0%, transparent 70%);
+    animation: pw-float-1 12s ease-in-out infinite;
+}
+
+.pw-shape-2 {
+    width: 350px;
+    height: 350px;
+    bottom: -100px;
+    left: -60px;
+    background: radial-gradient(circle, rgba(77, 164, 224, 0.1) 0%, transparent 70%);
+    animation: pw-float-2 15s ease-in-out infinite;
+}
+
+.pw-shape-3 {
+    width: 200px;
+    height: 200px;
+    top: 40%;
+    right: 15%;
+    border: 1px solid rgba(106, 187, 238, 0.08);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: pw-morph 18s ease-in-out infinite;
+}
+
+@keyframes pw-float-1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-30px, 20px) scale(1.05); }
+}
+
+@keyframes pw-float-2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(25px, -15px) scale(1.08); }
+}
+
+@keyframes pw-morph {
+    0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; transform: rotate(0deg); }
+    33% { border-radius: 60% 40% 50% 50% / 40% 60% 40% 60%; transform: rotate(60deg); }
+    66% { border-radius: 40% 60% 30% 70% / 70% 30% 60% 40%; transform: rotate(120deg); }
+}
+
+/* ── Gradient Overlays ── */
+.pw-hero-gradient-l {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(6, 90, 152, 0.08) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pw-hero-gradient-r {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(77, 164, 224, 0.06) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Dot Grid Pattern ── */
+.pw-hero-dots {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Corner Accents ── */
+.pw-corner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.pw-corner-tl {
+    top: 30px;
+    left: 40px;
+    border-left: 2px solid rgba(106, 187, 238, 0.2);
+    border-top: 2px solid rgba(106, 187, 238, 0.2);
+}
+
+.pw-corner-br {
+    bottom: 30px;
+    right: 40px;
+    border-right: 2px solid rgba(106, 187, 238, 0.2);
+    border-bottom: 2px solid rgba(106, 187, 238, 0.2);
+}
+
+/* ── Main Content ── */
+.pw-hero-inner {
+    position: relative;
+    z-index: 5;
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Breadcrumb */
+.pw-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.pw-breadcrumb a {
+    color: rgba(255, 255, 255, 0.45);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.pw-breadcrumb a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pw-breadcrumb svg {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.pw-breadcrumb span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Label */
+.pw-hero-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6abbee;
+    background: rgba(106, 187, 238, 0.1);
+    border: 1px solid rgba(106, 187, 238, 0.2);
+    padding: 6px 20px;
+    border-radius: 30px;
+    margin-bottom: 28px;
+}
+
+/* Heading */
+.pw-hero-heading {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+
+.pw-heading-accent {
+    color: #6abbee;
+    position: relative;
+}
+
+.pw-heading-accent::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #6abbee, transparent);
+    border-radius: 2px;
+}
+
+/* Divider */
+.pw-hero-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #065a98, #6abbee);
+    border-radius: 3px;
+    margin-bottom: 24px;
+}
+
+/* Description */
+.pw-hero-desc {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+    max-width: 620px;
+    margin-bottom: 40px;
+}
+
+/* ── Stat Badges ── */
+.pw-hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+    padding: 20px 36px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.pw-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.pw-stat-num {
+    font-size: 28px;
+    font-weight: 800;
+    color: #6abbee;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pw-stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.pw-stat-divider {
+    width: 1px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Integrated Category Tabs ── */
+.pw-hero-tabs {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pw-tab-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.pw-tab-link svg {
+    flex-shrink: 0;
+    color: rgba(106, 187, 238, 0.6);
+    transition: color 0.3s ease;
+}
+
+.pw-tab-arrow {
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.pw-tab-link:hover {
+    background: rgba(106, 187, 238, 0.12);
+    border-color: rgba(106, 187, 238, 0.3);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.pw-tab-link:hover svg {
+    color: #6abbee;
+}
+
+.pw-tab-link:hover .pw-tab-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ----------------------------------------------------------
+   SECTION 3 & 4 — PRODUCT CATEGORIES (Shared styles)
+   ---------------------------------------------------------- */
+.pw-category-section {
+    width: 100%;
+    padding: 100px 60px;
+    border-bottom: 1px solid rgba(138, 168, 190, 0.12);
+}
+
+.pw-foam-bg {
+    background: #fafcfd;
+}
+
+.pw-spray-bg {
+    background: #ffffff;
+}
+
+.pw-category-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pw-category-header {
+    text-align: center;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pw-category-heading {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0a2540;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.pw-category-desc {
+    font-size: 16px;
+    color: #526474;
+    line-height: 1.75;
+    max-width: 600px;
+}
+
+/* Grid for cards */
+.pw-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+/* Product Card */
+.pw-product-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 32px;
+    border: 1px solid rgba(138, 168, 190, 0.2);
+    box-shadow: 0 4px 12px rgba(10, 37, 64, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pw-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(10, 37, 64, 0.08);
+    border-color: rgba(6, 90, 152, 0.3);
+}
+
+.pw-product-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pw-icon-foam {
+    background: rgba(6, 90, 152, 0.08);
+    color: #065a98;
+    border: 1px solid rgba(6, 90, 152, 0.15);
+}
+
+.pw-icon-spray {
+    background: rgba(77, 164, 224, 0.1);
+    color: #4da4e0;
+    border: 1px solid rgba(77, 164, 224, 0.2);
+}
+
+.pw-product-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.pw-product-text {
+    font-size: 15px;
+    color: #526474;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------------
+   SECTION 5 — CUSTOM SOLUTION CTA
+   ---------------------------------------------------------- */
+.pw-cta-section {
+    width: 100%;
+    background: linear-gradient(135deg, #065a98 0%, #043d66 100%);
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.pw-cta-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pw-cta-heading {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.pw-cta-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.pw-cta-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pw-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #065a98;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pw-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.pw-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 6px;
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.pw-btn-outline:hover {
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================
+   RESPONSIVE LAYOUT
+   ========================================================== */
+
+@media (max-width: 1024px) {
+    .pw-hero-section { padding: 120px 40px 70px; min-height: 520px; }
+    .pw-hero-heading { font-size: 44px; }
+    .pw-hero-watermark { font-size: 160px; letter-spacing: 20px; }
+    
+    .pw-category-section { padding: 80px 40px; }
+    .pw-category-heading { font-size: 32px; }
+    .pw-category-header { margin-bottom: 48px; }
+    
+    .pw-cta-section { padding: 80px 40px; }
+}
+
+@media (max-width: 768px) {
+    .pw-hero-section { padding: 100px 24px 56px; min-height: 480px; }
+    .pw-hero-heading { font-size: 34px; letter-spacing: -0.5px; }
+    .pw-hero-desc { font-size: 15px; margin-bottom: 32px; }
+    .pw-hero-watermark { font-size: 100px; letter-spacing: 12px; }
+    .pw-hero-label { font-size: 11px; padding: 5px 16px; }
+
+    .pw-hero-stats { gap: 20px; padding: 16px 24px; }
+    .pw-stat-num { font-size: 22px; }
+    .pw-stat-label { font-size: 10px; }
+    .pw-stat-divider { height: 28px; }
+
+    .pw-hero-tabs { flex-direction: column; width: 100%; max-width: 340px; gap: 10px; }
+    .pw-tab-link { justify-content: center; }
+    .pw-tab-arrow { display: none; }
+
+    .pw-corner { display: none; }
+    .pw-hero-dots { display: none; }
+
+    .pw-category-section { padding: 64px 24px; }
+    
+    .pw-products-grid { grid-template-columns: 1fr; gap: 24px; }
+    
+    .pw-cta-section { padding: 64px 24px; }
+    .pw-cta-heading { font-size: 28px; }
+}
+
+@media (max-width: 520px) {
+    .pw-hero-section { padding: 80px 16px 40px; min-height: auto; }
+    .pw-hero-heading { font-size: 28px; line-height: 1.2; }
+    .pw-hero-desc { font-size: 14px; }
+    .pw-hero-watermark { font-size: 60px; letter-spacing: 8px; }
+    .pw-breadcrumb { margin-bottom: 20px; }
+
+    .pw-hero-stats { flex-direction: column; gap: 16px; padding: 20px; }
+    .pw-stat-divider { width: 50px; height: 1px; }
+    .pw-stat { flex-direction: row; gap: 10px; }
+    .pw-stat-num { font-size: 20px; }
+
+    .pw-hero-tabs { max-width: 100%; }
+    .pw-tab-link { font-size: 14px; padding: 12px 16px; }
+
+    .pw-category-section { padding: 48px 16px; }
+    .pw-category-heading { font-size: 26px; }
+    .pw-category-desc { font-size: 14px; }
+    
+    .pw-product-card { padding: 24px; }
+    .pw-product-title { font-size: 18px; }
+    .pw-product-text { font-size: 14px; }
+    
+    .pw-cta-section { padding: 48px 16px; }
+    .pw-cta-heading { font-size: 24px; }
+    .pw-cta-desc { font-size: 14px; }
+    .pw-cta-buttons { flex-direction: column; width: 100%; gap: 12px; }
+    .pw-btn-primary, .pw-btn-outline { width: 100%; justify-content: center; }
+}

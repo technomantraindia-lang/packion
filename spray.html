@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Spray Technology Solutions - Packion Systems</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spray.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Site Header (Identical to Home/Foam pages) -->
+        <div id="site-header">
+            <header class="relative z-[1000] mx-auto flex w-full max-w-[1400px] items-center justify-between px-20 py-[30px] max-[1100px]:gap-6 max-[1100px]:px-8 max-[1100px]:py-6 max-[768px]:flex-col max-[768px]:items-start max-[768px]:px-5 max-[768px]:py-[22px]">
+                <a href="index.html" class="brand-logo-link" aria-label="Packion Systems and Polyfoam Pvt Ltd home">
+                    <img src="logoo.png" alt="Packion Systems and Polyfoam Pvt Ltd" class="brand-logo-img">
+                </a>
+
+                <nav class="max-[768px]:w-full max-[768px]:overflow-x-auto max-[768px]:pb-2">
+                    <ul class="flex list-none items-center gap-10 overflow-visible max-[1100px]:gap-[22px] max-[768px]:w-max max-[768px]:gap-[18px] max-[768px]:pr-5">
+                        <li><a href="index.html" class="nav-link relative flex items-center gap-[5px] text-[15px] font-medium text-[#3d5061] hover:text-[#065a98] max-[1100px]:text-[14px]">Home</a></li>
+                        <li><a href="about.html" class="nav-link relative flex items-center gap-[5px] text-[15px] font-medium text-[#3d5061] hover:text-[#065a98] max-[1100px]:text-[14px]">About Us</a></li>
+
+                        <li class="nav-has-dropdown active" id="nav-products">
+                            <a href="products.html" class="nav-dropdown-trigger relative inline-flex cursor-pointer select-none items-center gap-[5px] text-[15px] font-semibold text-[#065a98] max-[1100px]:text-[14px]">
+                                Products
+                                <svg class="dd-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4" /></svg>
+                            </a>
+
+                            <ul class="dd-menu dd-level1">
+                                <li class="dd-has-sub" id="dd-foam">
+                                    <a href="products.html#foam-solutions" class="dd-item">
+                                        <span class="dd-item-icon dd-icon-foam">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /></svg>
+                                        </span>
+                                        <span class="dd-item-label">Foam</span>
+                                        <svg class="dd-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l6 5-6 5" /></svg>
+                                    </a>
+                                    <ul class="dd-menu dd-level2 dd-level2-foam">
+                                        <li><a href="foam.html?product=epe-foam" class="dd-sub-item">EPE Foam Packaging</a></li>
+                                        <li><a href="foam.html?product=xlpe-foam" class="dd-sub-item">XLPE Foam Packaging</a></li>
+                                        <li><a href="foam.html?product=pe-foam" class="dd-sub-item">PU Foam Packaging</a></li>
+                                        <li><a href="foam.html?product=antistatic-foam" class="dd-sub-item">Antistatic Foam Packaging</a></li>
+                                        <li><a href="foam.html?product=automotive-dunnage" class="dd-sub-item">Automotive Dunnage</a></li>
+                                        <li><a href="foam.html?product=trolley-dunnage" class="dd-sub-item">Trolley Dunnage</a></li>
+                                        <li><a href="foam.html?product=tool-kit-foam" class="dd-sub-item">Tool Kit Foam Packaging</a></li>
+                                        <li><a href="foam.html?product=industrial-foam" class="dd-sub-item">Defence Packaging</a></li>
+                                        <li><a href="foam.html?product=protective-foam" class="dd-sub-item">Protective Foam Packaging</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dd-has-sub" id="dd-spray">
+                                    <a href="products.html#spray-solutions" class="dd-item">
+                                        <span class="dd-item-icon dd-icon-spray">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 6 4 11 4 16a8 8 0 0 0 16 0c0-5-3-10-8-14z" /></svg>
+                                        </span>
+                                        <span class="dd-item-label">Spray</span>
+                                        <svg class="dd-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l6 5-6 5" /></svg>
+                                    </a>
+                                    <ul class="dd-menu dd-level2 dd-level2-spray">
+                                        <li><a href="spray.html?product=spray-nozzles" class="dd-sub-item">Spray Nozzles</a></li>
+                                        <li><a href="spray.html?product=automatic-spray-nozzles" class="dd-sub-item">Automatic Spray Nozzles</a></li>
+                                        <li><a href="spray.html?product=lubrication-spray-systems" class="dd-sub-item">Lubrication Spray Systems</a></li>
+                                        <li><a href="spray.html?product=spray-headers-manifolds" class="dd-sub-item">Spray Headers &amp; Manifolds</a></li>
+                                        <li><a href="spray.html?product=spray-controllers" class="dd-sub-item">Controllers</a></li>
+                                        <li><a href="spray.html?product=autojet-automated-systems" class="dd-sub-item">AutoJet Automated Systems</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="contact.html" class="nav-link relative flex items-center gap-[5px] text-[15px] font-medium text-[#3d5061] hover:text-[#065a98] max-[1100px]:text-[14px]">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <a href="contact.html" class="quote-btn flex items-center gap-2.5 rounded-md border border-[#7393ae] px-6 py-2.5 text-[14px] font-medium text-[#3d5061] max-[1100px]:whitespace-nowrap max-[1100px]:px-[18px] max-[768px]:self-start">
+                    Get a Quote
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;">
+                        <path d="M1 6H15M15 6L10 1M15 6L10 11" />
+                    </svg>
+                </a>
+            </header>
+        </div>
+
+        <!-- MAIN DYNAMIC CONTENT WRAPPER -->
+        <main class="spray-main-content">
+
+            <!-- 1. HERO SECTION (Full-Width Visual) -->
+            <section class="sp-hero-section">
+                <div class="sp-hero-overlay"></div>
+                <div class="sp-hero-inner">
+                    <div class="sp-hero-left">
+                        <div class="sp-breadcrumb">
+                            <a href="index.html">Home</a>
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4-4 4"/></svg>
+                            <a href="products.html">Products</a>
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4-4 4"/></svg>
+                            <span id="breadcrumb-current">Spray Systems</span>
+                        </div>
+                        <div class="sp-hero-image-pane" id="hero-image-placeholder">
+                            <div class="sp-img-placeholder">
+                                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+                                    <circle cx="50" cy="50" r="35" stroke-dasharray="4 4"/>
+                                    <path d="M50 15 L50 85 M15 50 L85 50" stroke-linecap="round"/>
+                                </svg>
+                                <span>Spray Product Visual</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sp-hero-right">
+                        <div class="sp-hero-text">
+                            <span class="sp-hero-label">SPRAY TECHNOLOGY</span>
+                            <h1 class="sp-hero-title" id="hero-title">Spray Nozzles</h1>
+                            <p class="sp-hero-desc" id="hero-description">High-precision spray nozzles designed for industrial efficiency and reliability.</p>
+                            <div class="sp-hero-buttons">
+                                <a href="contact.html" class="sp-btn-primary">Request a Quote</a>
+                                <a href="contact.html" class="sp-btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. DIAGRAM / SPEC SUMMARY STRIP -->
+            <section class="sp-summary-strip">
+                <div class="sp-container">
+                    <div class="sp-summary-inner">
+                        <div class="sp-summary-left">
+                            <span class="sp-section-tag">SCHEMATIC DIAGRAM</span>
+                            <h2 class="sp-section-title" style="margin-bottom:15px;">Technical Alignment</h2>
+                            <p id="summary-text" style="font-size:15px; color:#526474; font-weight:normal; line-height:1.75;">Technical blueprint layout representation details internal fluid dynamics parameters and spray manifold nozzles configurations.</p>
+                        </div>
+                        <div class="sp-summary-right" id="diagram-image-placeholder">
+                            <div class="sp-img-placeholder rect" style="height: 180px; width: 340px;">
+                                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+                                    <rect x="10" y="10" width="80" height="80" stroke-dasharray="2 2"/>
+                                    <path d="M10 50 H90 M50 10 V90 M30 30 L70 70"/>
+                                </svg>
+                                <span>Technical Diagram Blueprint</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. FEATURES SECTION (Sleek cards with image placeholders) -->
+            <section class="sp-benefits-section">
+                <div class="sp-container">
+                    <div class="sp-section-header">
+                        <span class="sp-section-tag">KEY FEATURES</span>
+                        <h2 class="sp-section-title">Engineered Capabilities</h2>
+                    </div>
+                    <div class="sp-features-grid" id="features-grid">
+                        <!-- Dynamic Feature Cards with Image Slots -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. APPLICATIONS SECTION (Grid layout with image placeholders) -->
+            <section class="sp-applications-section">
+                <div class="sp-container">
+                    <div class="sp-section-header">
+                        <span class="sp-section-tag">APPLICATIONS</span>
+                        <h2 class="sp-section-title">Ideal Use Cases</h2>
+                    </div>
+                    <div class="sp-applications-grid" id="applications-grid">
+                        <!-- Dynamic Application Cards with Image Slots -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. CASE STUDY / OPERATIONAL SUCCESS -->
+            <section class="sp-case-section">
+                <div class="sp-container">
+                    <div class="sp-case-grid">
+                        <div class="sp-case-left">
+                            <span class="sp-section-tag">CASE STUDY / WORKFLOW</span>
+                            <h2 class="sp-section-title">Operational Workflow</h2>
+                            <p class="sp-case-text" id="case-text">
+                                Process layout outlines the exact spray integration timeline within conveyor lines, stamping systems, and automated cleaning tunnels to reduce waste.
+                            </p>
+                        </div>
+                        <div class="sp-case-right" id="case-image-placeholder">
+                            <div class="sp-img-placeholder rect">
+                                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+                                    <rect x="10" y="20" width="80" height="60" rx="8" stroke-dasharray="3 3"/>
+                                    <path d="M15 50 Q50 20 85 50" stroke-linecap="round"/>
+                                    <circle cx="50" cy="35" r="4" fill="currentColor"/>
+                                </svg>
+                                <span>Installation Visual Diagram</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. DYNAMIC GALLERY SHOWCASE -->
+            <section class="sp-gallery-section">
+                <div class="sp-container">
+                    <div class="sp-section-header">
+                        <span class="sp-section-tag">GALLERY</span>
+                        <h2 class="sp-section-title">Installation Showcase</h2>
+                    </div>
+                    <div class="sp-gallery-grid" id="gallery-grid">
+                        <!-- Dynamic Gallery Image slots -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. CTA SECTION -->
+            <section class="sp-cta-section">
+                <div class="sp-cta-inner">
+                    <h2 class="sp-cta-title">Need a Custom Spray Solution?</h2>
+                    <p class="sp-cta-desc">Tell us your flow rates, line speeds, and media specifications, and our engineering team will tailor a spray nozzle or header system for your plant.</p>
+                    <div class="sp-cta-buttons">
+                        <a href="contact.html" class="sp-btn-white">Request a Quote</a>
+                        <a href="contact.html" class="sp-btn-outline-white">Contact Us</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. RELATED PRODUCTS SECTION -->
+            <section class="sp-related-section">
+                <div class="sp-container">
+                    <div class="sp-section-header">
+                        <span class="sp-section-tag">EXPLORE MORE</span>
+                        <h2 class="sp-section-title">Other Spray Solutions</h2>
+                    </div>
+                    <div class="sp-related-grid" id="related-grid">
+                        <!-- Dynamic Related Product Cards -->
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Site Footer (Identical to Home/Index) -->
+        <footer class="site-footer">
+            <div class="footer-cta">
+                <span class="cta-label">LET’S BUILD YOUR SOLUTION</span>
+                <h2>Looking for the Right Industrial Solution?</h2>
+                <p>Whether you need custom foam packaging, reusable dunnage or spray technology support, Packion can help you plan the right solution for your application, component and process requirements.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-solid-white">Get a Quote</a>
+                    <a href="contact.html" class="btn-outline-white">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-main">
+                <div class="footer-col brand-col">
+                    <h3>Packion Systems &amp; Polyfoam Pvt Ltd</h3>
+                    <p>Precision foam packaging and spray technology solutions for industrial, automotive, electronics and tooling applications.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#applications">Applications</a></li>
+                        <li><a href="#">Quality</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="foam.html?product=epe-foam">Foam Packaging</a></li>
+                        <li><a href="products.html#spray-solutions">Spray Technology</a></li>
+                        <li><a href="foam.html?product=automotive-dunnage">Reusable Dunnage</a></li>
+
+                        <li><a href="foam.html?product=antistatic-foam">Antistatic Foam</a></li>
+                        <li><a href="products.html#spray-solutions">Industrial Spray Systems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> info@packion.co.in</li>
+                        <li><strong>Phone:</strong> 08275448503</li>
+                        <li><strong>Location:</strong> Pune, Maharashtra, India</li>
+                        <li><strong>GSTIN:</strong> 27AAQCP9166K1ZH</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Packion Systems &amp; Polyfoam Pvt Ltd. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCRIPT LOADER -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Read query param
+            const params = new URLSearchParams(window.location.search);
+            const currentSlug = params.get('product') || 'spray-nozzles';
+
+            // Fetch dynamic data from spray_inner_pages copy.json
+            fetch('spray_inner_pages copy.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('Response failure');
+                    return response.json();
+                })
+                .then(data => {
+                    const pages = data.sprayPages || [];
+                    const productData = pages.find(p => p.pageSlug === currentSlug);
+                    if (productData) {
+                        populatePage(productData, pages);
+                    } else {
+                        populatePage(pages[0], pages);
+                    }
+                })
+                .catch(err => {
+                    console.error('Error fetching spray data:', err);
+                    // Use fallback local data
+                    const fallbackPages = fallbackData.sprayPages || [];
+                    const fallbackProduct = fallbackPages.find(p => p.pageSlug === currentSlug) || fallbackPages[0];
+                    populatePage(fallbackProduct, fallbackPages);
+                });
+
+            function mediaSlot(label, variant = '') {
+                const extraClass = variant ? ` ${variant}` : '';
+                return `
+                    <div class="sp-img-placeholder${extraClass}">
+                        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+                            <rect x="18" y="18" width="64" height="64" rx="8" stroke-dasharray="4 4"/>
+                            <path d="M28 64l14-16 12 12 10-14 14 18" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="38" cy="38" r="5" fill="currentColor"/>
+                        </svg>
+                        <span>${label}</span>
+                    </div>
+                `;
+            }
+
+            // Populate DOM
+            function populatePage(product, allPages) {
+                document.title = product.pageTitle + " - Packion Systems";
+                document.getElementById('breadcrumb-current').textContent = product.pageTitle;
+
+                // Hero
+                document.getElementById('hero-title').textContent = product.pageTitle;
+                document.getElementById('hero-description').textContent = product.intro;
+
+                const heroImgPlaceholder = document.getElementById('hero-image-placeholder');
+                heroImgPlaceholder.innerHTML = product.heroImage
+                    ? `<img src="${product.heroImage}" alt="${product.pageTitle}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">`
+                    : mediaSlot(`${product.pageTitle} product image`);
+
+                // Diagram Image
+                const diagramImgPlaceholder = document.getElementById('diagram-image-placeholder');
+                diagramImgPlaceholder.innerHTML = product.diagramImage
+                    ? `<img src="${product.diagramImage}" alt="${product.pageTitle} technical diagram" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">`
+                    : mediaSlot('Technical diagram image', 'rect');
+
+                // Features Grid
+                const featuresGrid = document.getElementById('features-grid');
+                featuresGrid.innerHTML = '';
+                
+                product.features.forEach((feat) => {
+                    const card = document.createElement('div');
+                    card.className = 'sp-benefit-card';
+                    const featImg = feat.image
+                        ? `<img src="${feat.image}" alt="${feat.title}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">`
+                        : mediaSlot(`${feat.title} image`, 'mini');
+                    card.innerHTML = `
+                        <div class="sp-feature-img-slot">
+                            ${featImg}
+                        </div>
+                        <h3 style="margin-top: 20px;">${feat.title}</h3>
+                        <p>${feat.desc}</p>
+                    `;
+                    featuresGrid.appendChild(card);
+                });
+
+                // Applications Grid
+                const appsGrid = document.getElementById('applications-grid');
+                appsGrid.innerHTML = '';
+
+                product.applications.forEach((app) => {
+                    const card = document.createElement('div');
+                    card.className = 'sp-app-card';
+                    const appImg = app.image
+                        ? `<img src="${app.image}" alt="${app.title}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">`
+                        : mediaSlot(`${app.title} application image`, 'mini');
+                    card.innerHTML = `
+                        <div class="sp-app-img-slot">
+                            ${appImg}
+                        </div>
+                        <h3 style="margin-top: 18px;">${app.title}</h3>
+                        <p>${app.desc}</p>
+                    `;
+                    appsGrid.appendChild(card);
+                });
+
+                // Case Study Image
+                const caseImgPlaceholder = document.getElementById('case-image-placeholder');
+                caseImgPlaceholder.innerHTML = product.caseStudyImage
+                    ? `<img src="${product.caseStudyImage}" alt="${product.pageTitle} installation" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">`
+                    : mediaSlot('Plant installation image', 'rect');
+
+                // Gallery Grid
+                const galleryGrid = document.getElementById('gallery-grid');
+                galleryGrid.innerHTML = '';
+                
+                product.galleryImages.forEach((imgSrc, index) => {
+                    const block = document.createElement('div');
+                    block.className = 'sp-gallery-item';
+                    block.innerHTML = imgSrc
+                        ? `<img src="${imgSrc}" alt="${product.pageTitle} gallery ${index + 1}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">`
+                        : mediaSlot(`Gallery image ${index + 1}`, 'mini');
+                    galleryGrid.appendChild(block);
+                });
+
+                // CTA Title
+                document.querySelector('.sp-cta-title').textContent = `Need a Custom ${product.pageTitle} Solution?`;
+
+                // Related Products
+                const relatedGrid = document.getElementById('related-grid');
+                relatedGrid.innerHTML = '';
+                let count = 0;
+                allPages.forEach(item => {
+                    if (item.pageSlug !== product.pageSlug && count < 3) {
+                        const card = document.createElement('a');
+                        card.href = `spray.html?product=${item.pageSlug}`;
+                        card.className = 'sp-related-card';
+                        
+                        let imgHtml = '';
+                        if (item.heroImage) {
+                            imgHtml = `<img src="${item.heroImage}" alt="${item.pageTitle}" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">`;
+                        }
+                        
+                        card.innerHTML = `
+                            <div class="sp-related-img-wrapper" style="position: relative; overflow: hidden;">
+                                ${imgHtml}
+                                <div class="sp-img-placeholder mini" style="${item.heroImage ? 'display: none;' : 'display: flex;'} width: 100%; height: 100%; border: 0; border-radius: 0; min-height: 160px !important; height: 160px !important;">
+                                    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+                                        <rect x="18" y="18" width="64" height="64" rx="8" stroke-dasharray="4 4"/>
+                                        <path d="M28 64l14-16 12 12 10-14 14 18" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="38" cy="38" r="5" fill="currentColor"/>
+                                    </svg>
+                                    <span>${item.pageTitle} image</span>
+                                </div>
+                            </div>
+                            <div class="sp-related-info">
+                                <h3>${item.pageTitle}</h3>
+                                <span>Learn More <svg width="12" height="10" viewBox="0 0 12 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 5H11M11 5L7 1M11 5L7 9"/></svg></span>
+                            </div>
+                        `;
+                        relatedGrid.appendChild(card);
+                        count++;
+                    }
+                });
+            }
+
+            // Fallback Local Data
+            const fallbackData = {
+                "sprayPages": [
+                    {
+                        "pageTitle": "Spray Nozzles",
+                        "pageSlug": "spray-nozzles",
+                        "intro": "High-precision spray nozzles designed for industrial efficiency and reliability.",
+                        "heroImage": "",
+                        "diagramImage": "",
+                        "caseStudyImage": "",
+                        "galleryImages": ["", "", ""],
+                        "features": [
+                            { "title": "Uniform spray distribution", "desc": "Specially engineered design optimized to improve coverage uniformity and prevent fluid pooling.", "image": "" },
+                            { "title": "Durable materials", "desc": "Manufactured from hardened alloys and stainless steel to resist wear and abrasive chemicals.", "image": "" }
+                        ],
+                        "applications": [
+                            { "title": "Automotive assembly", "desc": "High-impact chassis pre-treatment and spray washing in preparation for painting.", "image": "" },
+                            { "title": "Electronics cooling", "desc": "Micro-atomized spray mists to cool high-temperature components during manufacturing.", "image": "" }
+                        ]
+                    }
+                ]
+            };
+        });
+    </script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

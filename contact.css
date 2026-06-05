@@ -1,0 +1,454 @@
+/* ==========================================================
+   CONTACT PAGE — PAGE-SPECIFIC STYLES
+   contact.css
+   Shared site styles (header, footer, base) live in style.css
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   CONTACT PAGE SHARED CLASSES
+   ---------------------------------------------------------- */
+.cw-section-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #065a98;
+    margin-bottom: 20px;
+    padding: 4px 12px;
+    border: 1px solid rgba(6, 90, 152, 0.2);
+    border-radius: 3px;
+    background: rgba(6, 90, 152, 0.04);
+}
+
+.cw-label-light {
+    color: #4da4e0;
+    border-color: rgba(77, 164, 224, 0.25);
+    background: rgba(77, 164, 224, 0.07);
+}
+
+.contact-main-content {
+    width: 100%;
+    background: #ffffff;
+}
+
+/* ----------------------------------------------------------
+   SECTION 1 — CONTACT HERO
+   Simple centered hero on a soft gradient background
+   ---------------------------------------------------------- */
+.cw-hero-section {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(150deg, #f0f7ff 0%, #ffffff 60%, #f7fbfe 100%);
+    padding: 120px 60px 80px;
+    text-align: center;
+    border-bottom: 1px solid rgba(138, 168, 190, 0.12);
+    overflow: hidden;
+}
+
+/* Background decorative dots */
+.cw-hero-bg-dot {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(77, 164, 224, 0.12) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.cw-hero-bg-dot--r {
+    top: auto;
+    left: auto;
+    bottom: -150px;
+    right: -100px;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(6, 90, 152, 0.08) 0%, transparent 65%);
+}
+
+.cw-hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cw-hero-heading {
+    font-size: 48px;
+    font-weight: 800;
+    color: #0a2540;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+}
+
+.cw-hero-desc {
+    font-size: 17px;
+    font-weight: 400;
+    color: #526474;
+    line-height: 1.8;
+    max-width: 640px;
+}
+
+/* ----------------------------------------------------------
+   SECTION 2 — CONTACT INFORMATION + FORM
+   Two-column layout
+   ---------------------------------------------------------- */
+.cw-contact-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 100px 60px;
+}
+
+.cw-contact-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* --- Left Side: Details --- */
+.cw-contact-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.cw-contact-heading {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0a2540;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.cw-contact-text {
+    font-size: 16px;
+    color: #526474;
+    line-height: 1.75;
+    margin-bottom: 40px;
+    max-width: 440px;
+}
+
+.cw-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cw-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cw-detail-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(6, 90, 152, 0.05);
+    border: 1px solid rgba(6, 90, 152, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #065a98;
+    flex-shrink: 0;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cw-detail-item:hover .cw-detail-icon {
+    background: rgba(6, 90, 152, 0.1);
+    transform: translateY(-2px);
+}
+
+.cw-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 2px;
+}
+
+.cw-detail-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #7393ae;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cw-detail-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0a2540;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    line-height: 1.4;
+}
+
+a.cw-detail-value:hover {
+    color: #065a98;
+}
+
+/* --- Right Side: Form Card --- */
+.cw-form-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: 0 20px 40px rgba(10, 37, 64, 0.08), 0 1px 3px rgba(10, 37, 64, 0.05);
+    border: 1px solid rgba(138, 168, 190, 0.15);
+}
+
+.cw-form-heading {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0a2540;
+    margin-bottom: 32px;
+}
+
+.cw-inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cw-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.cw-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cw-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3d5061;
+}
+
+.cw-inquiry-form input,
+.cw-inquiry-form textarea,
+.cw-inquiry-form select {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1.5px solid #d0deea;
+    background: #fcfdfd;
+    font-size: 15px;
+    color: #0a2540;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cw-inquiry-form input::placeholder,
+.cw-inquiry-form textarea::placeholder {
+    color: #a3b8cb;
+}
+
+.cw-inquiry-form input:focus,
+.cw-inquiry-form textarea:focus,
+.cw-inquiry-form select:focus {
+    outline: none;
+    border-color: #065a98;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(6, 90, 152, 0.1);
+}
+
+.cw-select-wrapper {
+    position: relative;
+}
+
+.cw-select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.cw-select-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #7393ae;
+}
+
+.cw-inquiry-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.cw-btn-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    background: #065a98;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 8px;
+}
+
+.cw-btn-submit:hover {
+    background: #044475;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(6, 90, 152, 0.25);
+}
+
+/* ----------------------------------------------------------
+   SECTION 3 — LOCATION / BUSINESS DETAILS
+   Dark theme section with text left, map placeholder right
+   ---------------------------------------------------------- */
+.cw-location-section {
+    width: 100%;
+    background: linear-gradient(170deg, #081828 0%, #0d2138 55%, #071525 100%);
+    padding: 100px 60px;
+}
+
+.cw-location-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cw-location-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.cw-location-heading {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+}
+
+.cw-location-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+    max-width: 480px;
+}
+
+.cw-map-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle map grid effect */
+.cw-map-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.cw-map-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.cw-map-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cw-map-subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================
+   RESPONSIVE LAYOUT
+   ========================================================== */
+
+@media (max-width: 1024px) {
+    .cw-hero-section { padding: 100px 40px 60px; }
+    .cw-hero-heading { font-size: 40px; }
+
+    .cw-contact-section { padding: 80px 40px; }
+    .cw-contact-inner { gap: 40px; }
+    
+    .cw-form-card { padding: 36px; }
+
+    .cw-location-section { padding: 80px 40px; }
+    .cw-location-inner { gap: 40px; }
+    .cw-location-heading { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+    .cw-hero-section { padding: 80px 24px 48px; }
+    .cw-hero-heading { font-size: 34px; }
+    .cw-hero-desc { font-size: 15px; }
+
+    .cw-contact-section { padding: 64px 24px; }
+    .cw-contact-inner { grid-template-columns: 1fr; gap: 48px; }
+
+    .cw-form-row { grid-template-columns: 1fr; gap: 20px; }
+    
+    .cw-location-section { padding: 64px 24px; }
+    .cw-location-inner { grid-template-columns: 1fr; gap: 40px; }
+    
+    .cw-map-placeholder { aspect-ratio: 16 / 9; }
+}
+
+@media (max-width: 520px) {
+    .cw-hero-section { padding: 64px 16px 40px; }
+    .cw-hero-heading { font-size: 28px; line-height: 1.2; }
+    .cw-hero-desc { font-size: 14px; }
+
+    .cw-contact-section { padding: 48px 16px; }
+    .cw-contact-heading { font-size: 28px; }
+    .cw-contact-text { font-size: 15px; }
+    
+    .cw-form-card { padding: 24px; border-radius: 12px; }
+    .cw-form-heading { font-size: 20px; margin-bottom: 24px; }
+    .cw-inquiry-form { gap: 20px; }
+    
+    .cw-detail-item { gap: 16px; }
+    .cw-detail-icon { width: 40px; height: 40px; }
+    .cw-detail-value { font-size: 15px; }
+
+    .cw-location-section { padding: 48px 16px; }
+    .cw-location-heading { font-size: 26px; }
+}
