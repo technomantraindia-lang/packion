@@ -490,64 +490,6 @@
 
     {
       "id": 10,
-      "title": "Protective Foam Packaging",
-      "hero": {
-        "headline": "Protective Foam Packaging",
-        "subtitle": "Ultimate protection for industrial components",
-        "description": "High-quality foam solutions to safeguard products from damage.",
-        "image": "innerpages images/protective_foam_img_1780571268641.png",
-        "cta": [
-          "Explore Products",
-          "View Applications"
-        ]
-      },
-      "about": {
-        "heading": "About Protective Foam Packaging",
-        "content": "Engineered foam packaging to absorb shocks, prevent scratches, and provide secure storage for all industrial components."
-      },
-      "overviewImage": "innerpages images/protective_foam_img_1780571268641.png",
-      "specsImage": "innerpages images/protective_foam_img_1780571268641.png",
-      "featureImages": [
-        "innerpages images/protective_foam_img_1780571268641.png",
-        "innerpages images/protective_foam_img_1780571268641.png",
-        "innerpages images/protective_foam_img_1780571268641.png",
-        "innerpages images/protective_foam_img_1780571268641.png"
-      ],
-      "applicationImages": [
-        "innerpages images/protective_foam_img_1780571268641.png",
-        "innerpages images/protective_foam_img_1780571268641.png",
-        "innerpages images/protective_foam_img_1780571268641.png",
-        "innerpages images/protective_foam_img_1780571268641.png"
-      ],
-      "features": [
-        "Impact Protection",
-        "Custom Inserts",
-        "Reusable",
-        "Lightweight"
-      ],
-      "applications": [
-        "Automotive",
-        "Electronics",
-        "Tooling",
-        "Industrial Components"
-      ],
-      "specifications": [
-        {
-          "name": "Material Type",
-          "value": "EPE / PE Foam"
-        },
-        {
-          "name": "Custom Cuts",
-          "value": "Available"
-        },
-        {
-          "name": "Reusable",
-          "value": "Yes"
-        }
-      ]
-    },
-    {
-      "id": 11,
       "title": "Gasket",
       "hero": {
         "headline": "Custom Industrial Gaskets",

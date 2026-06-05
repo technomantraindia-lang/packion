@@ -34,15 +34,18 @@
 
 /* ----------------------------------------------------------
    SECTION 1 — CONTACT HERO
-   Simple centered hero on a soft gradient background
+   Centered hero on a deep branded gradient background
    ---------------------------------------------------------- */
 .cw-hero-section {
     position: relative;
     width: 100%;
-    background: linear-gradient(150deg, #f0f7ff 0%, #ffffff 60%, #f7fbfe 100%);
+    background:
+        radial-gradient(circle at 15% 20%, rgba(74, 173, 238, 0.24), transparent 34%),
+        radial-gradient(circle at 85% 75%, rgba(40, 112, 177, 0.28), transparent 38%),
+        linear-gradient(135deg, #071f38 0%, #0b3b63 52%, #075b91 100%);
     padding: 120px 60px 80px;
     text-align: center;
-    border-bottom: 1px solid rgba(138, 168, 190, 0.12);
+    border-bottom: 1px solid rgba(138, 205, 247, 0.2);
     overflow: hidden;
 }
 
@@ -53,7 +56,7 @@
     left: -100px;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(77, 164, 224, 0.12) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(121, 205, 255, 0.2) 0%, transparent 65%);
     pointer-events: none;
     z-index: 0;
 }
@@ -65,7 +68,7 @@
     right: -100px;
     width: 450px;
     height: 450px;
-    background: radial-gradient(circle, rgba(6, 90, 152, 0.08) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(84, 183, 244, 0.18) 0%, transparent 65%);
 }
 
 .cw-hero-inner {
@@ -78,10 +81,16 @@
     align-items: center;
 }
 
+.cw-hero-section .cw-section-label {
+    color: #8ed4ff;
+    border-color: rgba(142, 212, 255, 0.38);
+    background: rgba(142, 212, 255, 0.1);
+}
+
 .cw-hero-heading {
     font-size: 48px;
     font-weight: 800;
-    color: #0a2540;
+    color: #ffffff;
     line-height: 1.15;
     letter-spacing: -0.5px;
     margin-bottom: 24px;
@@ -90,7 +99,7 @@
 .cw-hero-desc {
     font-size: 17px;
     font-weight: 400;
-    color: #526474;
+    color: #d5e9f7;
     line-height: 1.8;
     max-width: 640px;
 }
