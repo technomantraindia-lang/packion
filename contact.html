@@ -19,7 +19,7 @@
 
         <!-- ===================== HEADER ===================== -->
         <div id="site-header" class="about-header">
-<header class="relative z-[1000] mx-auto flex w-full max-w-[1400px] items-center justify-between px-20 py-[30px] max-[1100px]:gap-6 max-[1100px]:px-8 max-[1100px]:py-6 max-[768px]:flex-col max-[768px]:items-start max-[768px]:px-5 max-[768px]:py-[22px]">
+<header class="relative z-[1000] mx-auto flex w-full max-w-[1600px] items-center justify-between px-12 py-[30px] max-[1100px]:gap-6 max-[1100px]:px-8 max-[1100px]:py-6 max-[768px]:flex-col max-[768px]:items-start max-[768px]:px-5 max-[768px]:py-[22px]">
     <a href="index.html" class="brand-logo-link" aria-label="Packion Systems and Polyfoam Pvt Ltd home">
         <img src="logoo.png" alt="Packion Systems and Polyfoam Pvt Ltd" class="brand-logo-img">
     </a>
@@ -47,13 +47,13 @@
                         <ul class="dd-menu dd-level2 dd-level2-foam">
                             <li><a href="foam.html?product=epe-foam" class="dd-sub-item">EPE Foam Packaging</a></li>
                             <li><a href="foam.html?product=xlpe-foam" class="dd-sub-item">XLPE Foam Packaging</a></li>
+                            <li><a href="foam.html?product=gasket" class="dd-sub-item">Gasket</a></li>
                             <li><a href="foam.html?product=pe-foam" class="dd-sub-item">PU Foam Packaging</a></li>
                             <li><a href="foam.html?product=antistatic-foam" class="dd-sub-item">Antistatic Foam Packaging</a></li>
                             <li><a href="foam.html?product=automotive-dunnage" class="dd-sub-item">Automotive Dunnage</a></li>
                             <li><a href="foam.html?product=trolley-dunnage" class="dd-sub-item">Trolley Dunnage</a></li>
                             <li><a href="foam.html?product=tool-kit-foam" class="dd-sub-item">Tool Kit Foam Packaging</a></li>
                             <li><a href="foam.html?product=industrial-foam" class="dd-sub-item">Defence Packaging</a></li>
-                            <li><a href="foam.html?product=gasket" class="dd-sub-item">Gasket</a></li>
                         </ul>
                     </li>
 
@@ -87,7 +87,29 @@
             <path d="M1 6H15M15 6L10 1M15 6L10 11" />
         </svg>
     </a>
+    <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Open menu"><span class="ham-line"></span><span class="ham-line"></span><span class="ham-line"></span></button>
 </header>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation">
+    <div class="drawer-header"><img src="logoo.png" alt="Packion" class="drawer-logo"><button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l12 12M14 2L2 14"/></svg></button></div>
+    <div class="drawer-nav">
+        <a href="index.html" class="drawer-nav-item">Home</a>
+        <a href="about.html" class="drawer-nav-item">About Us</a>
+        <button class="drawer-products-toggle" id="drawerProductsToggle" type="button">Products <svg class="drawer-chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg></button>
+        <div class="drawer-submenu" id="drawerSubmenu">
+            <div class="drawer-submenu-group"><div class="drawer-submenu-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> Foam Solutions</div>
+                <a href="foam.html?product=epe-foam" class="drawer-sub-link">EPE Foam Packaging</a><a href="foam.html?product=xlpe-foam" class="drawer-sub-link">XLPE Foam Packaging</a><a href="foam.html?product=gasket" class="drawer-sub-link">Gasket</a><a href="foam.html?product=pe-foam" class="drawer-sub-link">PU Foam Packaging</a><a href="foam.html?product=antistatic-foam" class="drawer-sub-link">Antistatic Foam Packaging</a><a href="foam.html?product=automotive-dunnage" class="drawer-sub-link">Automotive Dunnage</a><a href="foam.html?product=trolley-dunnage" class="drawer-sub-link">Trolley Dunnage</a><a href="foam.html?product=tool-kit-foam" class="drawer-sub-link">Tool Kit Foam Packaging</a><a href="foam.html?product=industrial-foam" class="drawer-sub-link">Defence Packaging</a>
+            </div>
+            <div class="drawer-submenu-group"><div class="drawer-submenu-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C7 6 4 11 4 16a8 8 0 0 0 16 0c0-5-3-10-8-14z"/></svg> Spray Technology</div>
+                <a href="spray.html?product=spray-nozzles" class="drawer-sub-link">Spray Nozzles</a><a href="spray.html?product=automatic-spray-nozzles" class="drawer-sub-link">Automatic Spray Nozzles</a><a href="spray.html?product=lubrication-spray-systems" class="drawer-sub-link">Lubrication Spray Systems</a><a href="spray.html?product=spray-headers-manifolds" class="drawer-sub-link">Spray Headers &amp; Manifolds</a><a href="spray.html?product=spray-controllers" class="drawer-sub-link">Controllers</a><a href="spray.html?product=autojet-automated-systems" class="drawer-sub-link">AutoJet Automated Systems</a>
+            </div>
+        </div>
+        <a href="contact.html" class="drawer-nav-item active">Contact Us</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <a href="contact.html" class="drawer-cta">Get a Quote <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6H15M15 6L10 1M15 6L10 11"/></svg></a>
+    <div class="drawer-contact"><strong>Email:</strong> info@packion.co.in<br><strong>Phone:</strong> 08275448503</div>
+</nav>
         </div><!-- /#site-header -->
 
         <!-- ===================== MAIN CONTENT AREA ===================== -->
@@ -170,7 +192,7 @@
                         <div class="cw-form-card">
                             <h3 class="cw-form-heading">Send Your Requirement</h3>
                             
-                            <form class="cw-inquiry-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted successfully!');">
+                            <form class="cw-inquiry-form" action="send-inquiry.php" method="POST">
                                 <div class="cw-form-row">
                                     <div class="cw-form-group">
                                         <label for="fullName">Full Name</label>

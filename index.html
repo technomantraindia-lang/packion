@@ -15,7 +15,7 @@
     <div class="page-wrapper">
         <section class="hero-section">
             <div id="site-header">
-<header class="relative z-[1000] mx-auto flex w-full max-w-[1400px] items-center justify-between px-20 py-[30px] max-[1100px]:gap-6 max-[1100px]:px-8 max-[1100px]:py-6 max-[768px]:flex-col max-[768px]:items-start max-[768px]:px-5 max-[768px]:py-[22px]">
+<header class="relative z-[1000] mx-auto flex w-full max-w-[1600px] items-center justify-between px-12 py-[30px] max-[1100px]:gap-6 max-[1100px]:px-8 max-[1100px]:py-6 max-[768px]:flex-col max-[768px]:items-start max-[768px]:px-5 max-[768px]:py-[22px]">
     <a href="index.html" class="brand-logo-link" aria-label="Packion Systems and Polyfoam Pvt Ltd home">
         <img src="logoo.png" alt="Packion Systems and Polyfoam Pvt Ltd" class="brand-logo-img">
     </a>
@@ -43,6 +43,7 @@
                         <ul class="dd-menu dd-level2 dd-level2-foam">
                             <li><a href="foam.html?product=epe-foam" class="dd-sub-item">EPE Foam Packaging</a></li>
                             <li><a href="foam.html?product=xlpe-foam" class="dd-sub-item">XLPE Foam Packaging</a></li>
+                            <li><a href="foam.html?product=gasket" class="dd-sub-item">Gasket</a></li>
                             <li><a href="foam.html?product=pe-foam" class="dd-sub-item">PU Foam Packaging</a></li>
                             <li><a href="foam.html?product=antistatic-foam" class="dd-sub-item">Antistatic Foam Packaging</a></li>
                             <li><a href="foam.html?product=automotive-dunnage" class="dd-sub-item">Automotive Dunnage</a></li>
@@ -50,7 +51,6 @@
                             <li><a href="foam.html?product=tool-kit-foam" class="dd-sub-item">Tool Kit Foam Packaging</a></li>
                             <li><a href="foam.html?product=industrial-foam" class="dd-sub-item">Defence Packaging</a></li>
 
-                            <li><a href="foam.html?product=gasket" class="dd-sub-item">Gasket</a></li>
                         </ul>
                     </li>
 
@@ -84,7 +84,75 @@
             <path d="M1 6H15M15 6L10 1M15 6L10 11" />
         </svg>
     </a>
+
+    <!-- Hamburger Button (mobile) -->
+    <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Open menu">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+    </button>
 </header>
+
+<!-- Drawer Overlay -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<!-- Mobile Drawer -->
+<nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation">
+    <div class="drawer-header">
+        <img src="logoo.png" alt="Packion" class="drawer-logo">
+        <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l12 12M14 2L2 14"/></svg>
+        </button>
+    </div>
+    <div class="drawer-nav">
+        <a href="index.html" class="drawer-nav-item active">Home</a>
+        <a href="about.html" class="drawer-nav-item">About Us</a>
+        <button class="drawer-products-toggle" id="drawerProductsToggle" type="button">
+            Products
+            <svg class="drawer-chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg>
+        </button>
+        <div class="drawer-submenu" id="drawerSubmenu">
+            <div class="drawer-submenu-group">
+                <div class="drawer-submenu-label">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    Foam Solutions
+                </div>
+                <a href="foam.html?product=epe-foam" class="drawer-sub-link">EPE Foam Packaging</a>
+                <a href="foam.html?product=xlpe-foam" class="drawer-sub-link">XLPE Foam Packaging</a>
+                <a href="foam.html?product=gasket" class="drawer-sub-link">Gasket</a>
+                <a href="foam.html?product=pe-foam" class="drawer-sub-link">PU Foam Packaging</a>
+                <a href="foam.html?product=antistatic-foam" class="drawer-sub-link">Antistatic Foam Packaging</a>
+                <a href="foam.html?product=automotive-dunnage" class="drawer-sub-link">Automotive Dunnage</a>
+                <a href="foam.html?product=trolley-dunnage" class="drawer-sub-link">Trolley Dunnage</a>
+                <a href="foam.html?product=tool-kit-foam" class="drawer-sub-link">Tool Kit Foam Packaging</a>
+                <a href="foam.html?product=industrial-foam" class="drawer-sub-link">Defence Packaging</a>
+            </div>
+            <div class="drawer-submenu-group">
+                <div class="drawer-submenu-label">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C7 6 4 11 4 16a8 8 0 0 0 16 0c0-5-3-10-8-14z"/></svg>
+                    Spray Technology
+                </div>
+                <a href="spray.html?product=spray-nozzles" class="drawer-sub-link">Spray Nozzles</a>
+                <a href="spray.html?product=automatic-spray-nozzles" class="drawer-sub-link">Automatic Spray Nozzles</a>
+                <a href="spray.html?product=lubrication-spray-systems" class="drawer-sub-link">Lubrication Spray Systems</a>
+                <a href="spray.html?product=spray-headers-manifolds" class="drawer-sub-link">Spray Headers &amp; Manifolds</a>
+                <a href="spray.html?product=spray-controllers" class="drawer-sub-link">Controllers</a>
+                <a href="spray.html?product=autojet-automated-systems" class="drawer-sub-link">AutoJet Automated Systems</a>
+            </div>
+        </div>
+        <a href="contact.html" class="drawer-nav-item">Contact Us</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <a href="contact.html" class="drawer-cta">
+        Get a Quote
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6H15M15 6L10 1M15 6L10 11"/></svg>
+    </a>
+    <div class="drawer-contact">
+        <strong>Email:</strong> info@packion.co.in<br>
+        <strong>Phone:</strong> 08275448503
+    </div>
+</nav>
+
             </div>
 
             <div class="hero-slider" id="homeHeroSlider">
@@ -107,7 +175,7 @@
                                         <img src="innerpages images/Antistatic Foam Packaging.png" alt="Antistatic Foam Packaging" class="foam-slider-img">
                                     </div>
                                     <div class="foam-slider-slide" data-foam-label="Automotive Dunnage">
-                                        <img src="innerpages images/automotive dannage.png" alt="Automotive Dunnage" class="foam-slider-img">
+                                        <img src="innerpages images/auto-mobile Dunnage 2.jpeg" alt="Automotive Dunnage" class="foam-slider-img">
                                     </div>
                                     <div class="foam-slider-slide" data-foam-label="Trolley Dunnage">
                                         <img src="innerpages images/trolly dannage.png" alt="Trolley Dunnage" class="foam-slider-img">
@@ -402,25 +470,91 @@
                     </div>
 
                     <div class="resting-graphic graphic-foam">
-                        <svg viewBox="0 0 200 200" fill="none" stroke="#065a98" stroke-width="1.5"
-                            stroke-linejoin="round">
-                            <g class="float-1">
-                                <polygon points="100,60 140,80 140,120 100,140 60,120 60,80"
-                                    fill="rgba(6,90,152,0.03)" />
-                                <polyline points="60,80 100,100 140,80" />
-                                <line x1="100" y1="100" x2="100" y2="140" />
+                        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="foam-glass-top" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
+                                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15" />
+                                </linearGradient>
+                                <linearGradient id="foam-glass-left" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#065a98" stop-opacity="0.18" />
+                                    <stop offset="100%" stop-color="#065a98" stop-opacity="0.04" />
+                                </linearGradient>
+                                <linearGradient id="foam-glass-right" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#065a98" stop-opacity="0.28" />
+                                    <stop offset="100%" stop-color="#065a98" stop-opacity="0.08" />
+                                </linearGradient>
+                                <linearGradient id="foam-inner-top" x1="0" y1="0" x2="1" y2="0">
+                                    <stop offset="0%" stop-color="#00f2fe" />
+                                    <stop offset="100%" stop-color="#4facfe" />
+                                </linearGradient>
+                                <linearGradient id="foam-inner-left" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#4da4e0" />
+                                    <stop offset="100%" stop-color="#065a98" />
+                                </linearGradient>
+                                <linearGradient id="foam-inner-right" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#065a98" />
+                                    <stop offset="100%" stop-color="#032b49" />
+                                </linearGradient>
+                                <linearGradient id="foam-stroke-white" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+                                    <stop offset="50%" stop-color="#ffffff" stop-opacity="0.4" />
+                                    <stop offset="100%" stop-color="#4da4e0" stop-opacity="0.7" />
+                                </linearGradient>
+                                <radialGradient id="foam-shadow-grad" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#0a2540" stop-opacity="0.22" />
+                                    <stop offset="100%" stop-color="#0a2540" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="foam-glow-core" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.35" />
+                                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+
+                            <!-- Shadows (scaled and animated via CSS) -->
+                            <ellipse cx="200" cy="340" rx="80" ry="18" fill="url(#foam-shadow-grad)" class="foam-shadow shadow-main" />
+                            <ellipse cx="100" cy="225" rx="32" ry="8" fill="url(#foam-shadow-grad)" class="foam-shadow shadow-left" />
+                            <ellipse cx="305" cy="335" rx="46" ry="11" fill="url(#foam-shadow-grad)" class="foam-shadow shadow-right" />
+
+                            <!-- Flanking Box Left (Floating, Solid Glowing Blue) -->
+                            <g class="foam-box box-left">
+                                <!-- Top face -->
+                                <polygon points="100,130 126,145 100,160 74,145" fill="url(#foam-inner-top)" stroke="url(#foam-stroke-white)" stroke-width="1" />
+                                <!-- Left face -->
+                                <polygon points="74,145 100,160 100,190 74,175" fill="url(#foam-inner-left)" stroke="url(#foam-stroke-white)" stroke-width="1" />
+                                <!-- Right face -->
+                                <polygon points="100,160 126,145 126,175 100,190" fill="url(#foam-inner-right)" stroke="url(#foam-stroke-white)" stroke-width="1" />
                             </g>
-                            <g class="float-2">
-                                <polygon points="150,40 170,50 170,70 150,80 130,70 130,50"
-                                    fill="rgba(6,90,152,0.06)" />
-                                <polyline points="130,50 150,60 170,50" />
-                                <line x1="150" y1="60" x2="150" y2="80" />
+
+                            <!-- Central Box (Double-walled / Nested Foam Packaging) -->
+                            <g class="foam-box box-main">
+                                <!-- Glowing backdrop behind the inner box -->
+                                <circle cx="200" cy="220" r="55" fill="url(#foam-glow-core)" class="foam-core-glow" />
+
+                                <!-- Inner protected box (draw before outer front faces to simulate nesting) -->
+                                <g class="foam-box-inner">
+                                    <polygon points="200,178 236.4,199 200,220 163.6,199" fill="url(#foam-inner-top)" stroke="#00f2fe" stroke-width="0.8" />
+                                    <polygon points="163.6,199 200,220 200,262 163.6,241" fill="url(#foam-inner-left)" stroke="#00f2fe" stroke-width="0.8" />
+                                    <polygon points="200,220 236.4,199 236.4,241 200,262" fill="url(#foam-inner-right)" stroke="#00f2fe" stroke-width="0.8" />
+                                </g>
+
+                                <!-- Outer transparent glassmorphic box -->
+                                <!-- Top face -->
+                                <polygon points="200,135 265,172.5 200,210 135,172.5" fill="url(#foam-glass-top)" stroke="url(#foam-stroke-white)" stroke-width="1.2" stroke-linejoin="round" />
+                                <!-- Left face -->
+                                <polygon points="135,172.5 200,210 200,285 135,247.5" fill="url(#foam-glass-left)" stroke="url(#foam-stroke-white)" stroke-width="1.2" stroke-linejoin="round" />
+                                <!-- Right face -->
+                                <polygon points="200,210 265,172.5 265,247.5 200,285" fill="url(#foam-glass-right)" stroke="url(#foam-stroke-white)" stroke-width="1.2" stroke-linejoin="round" />
                             </g>
-                            <g class="float-3">
-                                <polygon points="50,130 70,140 70,160 50,170 30,160 30,140"
-                                    fill="rgba(6,90,152,0.04)" />
-                                <polyline points="30,140 50,150 70,140" />
-                                <line x1="50" y1="150" x2="50" y2="170" />
+
+                            <!-- Flanking Box Right (Floating, Medium Glassmorphic) -->
+                            <g class="foam-box box-right">
+                                <!-- Top face -->
+                                <polygon points="305,205 344,227.5 305,250 266,227.5" fill="url(#foam-glass-top)" stroke="url(#foam-stroke-white)" stroke-width="1" stroke-linejoin="round" />
+                                <!-- Left face -->
+                                <polygon points="266,227.5 305,250 305,295 266,272.5" fill="url(#foam-glass-left)" stroke="url(#foam-stroke-white)" stroke-width="1" stroke-linejoin="round" />
+                                <!-- Right face -->
+                                <polygon points="305,250 344,227.5 344,272.5 305,295" fill="url(#foam-glass-right)" stroke="url(#foam-stroke-white)" stroke-width="1" stroke-linejoin="round" />
                             </g>
                         </svg>
                     </div>
@@ -538,20 +672,109 @@
                     </div>
 
                     <div class="resting-graphic graphic-spray">
-                        <svg viewBox="0 0 200 200" fill="none" stroke="#4da4e0" stroke-width="1.5"
-                            stroke-linecap="round">
-                            <path d="M90 160 L110 160 L105 140 L95 140 Z" fill="rgba(77,164,224,0.1)" />
-                            <path d="M85 160 L115 160 L120 170 L80 170 Z" fill="rgba(77,164,224,0.2)" />
+                        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="spray-console-top" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#1b395d" />
+                                    <stop offset="100%" stop-color="#0a1d33" />
+                                </linearGradient>
+                                <linearGradient id="spray-console-left" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#0c233c" />
+                                    <stop offset="100%" stop-color="#05101c" />
+                                </linearGradient>
+                                <linearGradient id="spray-console-right" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#163c68" />
+                                    <stop offset="100%" stop-color="#091f37" />
+                                </linearGradient>
+                                <linearGradient id="spray-glow-cyan" x1="0" y1="0" x2="1" y2="0">
+                                    <stop offset="0%" stop-color="#00f2fe" />
+                                    <stop offset="100%" stop-color="#4facfe" />
+                                </linearGradient>
+                                <linearGradient id="spray-glow-blue" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#4da4e0" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#065a98" stop-opacity="0.2" />
+                                </linearGradient>
+                                <linearGradient id="spray-nozzle-top" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#4da4e0" />
+                                    <stop offset="100%" stop-color="#00f2fe" />
+                                </linearGradient>
+                                <linearGradient id="spray-nozzle-left" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#065a98" />
+                                    <stop offset="100%" stop-color="#4da4e0" />
+                                </linearGradient>
+                                <linearGradient id="spray-nozzle-right" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#033b66" />
+                                    <stop offset="100%" stop-color="#065a98" />
+                                </linearGradient>
+                                <radialGradient id="spray-shadow-grad" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#020810" stop-opacity="0.6" />
+                                    <stop offset="100%" stop-color="#020810" stop-opacity="0" />
+                                </radialGradient>
+                                <radialGradient id="spray-nozzle-glow" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.4" />
+                                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
 
-                            <path d="M80 120 Q100 100 120 120" stroke-dasharray="4 4" class="spray-wave wave-1" />
-                            <path d="M60 90 Q100 60 140 90" stroke-dasharray="6 6" class="spray-wave wave-2" />
-                            <path d="M40 60 Q100 20 160 60" stroke-dasharray="8 8" class="spray-wave wave-3" />
+                            <!-- Shadow beneath console -->
+                            <ellipse cx="200" cy="355" rx="85" ry="18" fill="url(#spray-shadow-grad)" class="spray-shadow shadow-console" />
 
-                            <circle cx="100" cy="110" r="3" fill="#4da4e0" class="spray-drop drop-1" />
-                            <circle cx="80" cy="80" r="4" fill="#4da4e0" class="spray-drop drop-2" />
-                            <circle cx="120" cy="70" r="2" fill="#4da4e0" class="spray-drop drop-3" />
-                            <circle cx="60" cy="40" r="5" fill="#4da4e0" class="spray-drop drop-1" />
-                            <circle cx="140" cy="50" r="3" fill="#4da4e0" class="spray-drop drop-2" />
+                            <!-- Spray Particle Mist (rendered behind console and nozzle) -->
+                            <g class="spray-mist-bg">
+                                <circle cx="150" cy="180" r="2.5" fill="#4da4e0" class="spray-mist mist-1" />
+                                <circle cx="250" cy="190" r="3.5" fill="#00f2fe" class="spray-mist mist-2" />
+                                <circle cx="165" cy="230" r="2.0" fill="#4facfe" class="spray-mist mist-3" />
+                                <circle cx="235" cy="250" r="3.0" fill="#00f2fe" class="spray-mist mist-4" />
+                                <circle cx="190" cy="280" r="1.5" fill="#4da4e0" class="spray-mist mist-5" />
+                                <circle cx="215" cy="300" r="2.5" fill="#4facfe" class="spray-mist mist-6" />
+                            </g>
+
+                            <!-- Industrial System Console Block (Isometric Box) -->
+                            <g class="spray-console-block">
+                                <!-- Top face -->
+                                <polygon points="200,165 265,202.5 200,240 135,202.5" fill="url(#spray-console-top)" stroke="rgba(77, 164, 224, 0.3)" stroke-width="1.2" />
+                                <!-- Left face with cooling slots -->
+                                <polygon points="135,202.5 200,240 200,315 135,277.5" fill="url(#spray-console-left)" stroke="rgba(77, 164, 224, 0.2)" stroke-width="1.2" />
+                                <!-- Vent slots details on left face -->
+                                <line x1="150" y1="220" x2="150" y2="255" stroke="rgba(77, 164, 224, 0.45)" stroke-width="1.8" stroke-linecap="round" />
+                                <line x1="162" y1="227" x2="162" y2="262" stroke="rgba(77, 164, 224, 0.45)" stroke-width="1.8" stroke-linecap="round" />
+                                <line x1="174" y1="234" x2="174" y2="269" stroke="rgba(77, 164, 224, 0.45)" stroke-width="1.8" stroke-linecap="round" />
+                                <line x1="186" y1="241" x2="186" y2="276" stroke="rgba(77, 164, 224, 0.45)" stroke-width="1.8" stroke-linecap="round" />
+
+                                <!-- Right face (Control Panel Face) -->
+                                <polygon points="200,240 265,202.5 265,277.5 200,315" fill="url(#spray-console-right)" stroke="rgba(77, 164, 224, 0.2)" stroke-width="1.2" />
+                                <!-- Glass Control Panel Inset -->
+                                <polygon points="208,242 257,214 257,269 208,297" fill="#071b30" stroke="#00f2fe" stroke-width="1" />
+                                <!-- Control Panel Telemetry lines (animated via CSS glow) -->
+                                <line x1="215" y1="248" x2="245" y2="231" stroke="url(#spray-glow-cyan)" stroke-width="1.5" class="telemetry-line-1" />
+                                <line x1="215" y1="259" x2="250" y2="239" stroke="#00f2fe" stroke-width="1.5" class="telemetry-line-2" />
+                                <line x1="215" y1="270" x2="235" y2="259" stroke="url(#spray-glow-cyan)" stroke-width="1.5" class="telemetry-line-3" />
+                                <!-- LED indicator dots on right face -->
+                                <circle cx="218" cy="286" r="2.2" fill="#00f2fe" class="telemetry-led-1" />
+                                <circle cx="228" cy="280.5" r="2.2" fill="#00f2fe" class="telemetry-led-2" />
+                                <circle cx="238" cy="275" r="2.2" fill="#00f2fe" class="telemetry-led-3" />
+                            </g>
+
+                            <!-- Animated Spray Wave Rings (pulses out from nozzle) -->
+                            <g class="spray-waves-group">
+                                <ellipse cx="200" cy="142" rx="14" ry="7" stroke="url(#spray-glow-cyan)" stroke-width="1.5" class="spray-ring ring-1" />
+                                <ellipse cx="200" cy="165" rx="30" ry="15" stroke="url(#spray-glow-cyan)" stroke-width="1.5" class="spray-ring ring-2" />
+                                <ellipse cx="200" cy="200" rx="56" ry="28" stroke="url(#spray-glow-blue)" stroke-width="1.5" class="spray-ring ring-3" />
+                                <ellipse cx="200" cy="245" rx="88" ry="44" stroke="url(#spray-glow-blue)" stroke-width="1" class="spray-ring ring-4" />
+                            </g>
+
+                            <!-- Precision Spray Nozzle Block (Floating isometric block above console) -->
+                            <g class="spray-nozzle-block">
+                                <circle cx="200" cy="122" r="30" fill="url(#spray-nozzle-glow)" class="nozzle-glow" />
+                                <!-- Top face -->
+                                <polygon points="200,76 220.8,88 200,100 179.2,88" fill="url(#spray-nozzle-top)" stroke="rgba(0, 242, 254, 0.4)" stroke-width="1" />
+                                <!-- Left face -->
+                                <polygon points="179.2,88 200,100 200,124 179.2,112" fill="url(#spray-nozzle-left)" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1" />
+                                <!-- Right face -->
+                                <polygon points="200,100 220.8,88 220.8,112 200,124" fill="url(#spray-nozzle-right)" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1" />
+                                <!-- Nozzle Tip -->
+                                <polygon points="196,124 204,124 202,132 198,132" fill="#00f2fe" />
+                            </g>
                         </svg>
                     </div>
 

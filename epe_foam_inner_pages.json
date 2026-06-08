@@ -22,14 +22,14 @@
       "featureImages": [
         "innerpages images/Epe fome-2.webp",
         "innerpages images/Epe fome -3.jpg",
-        "innerpages images/Epe fome .png",
-        "innerpages images/Epe fome-2.webp"
+        "innerpages images/Epe fome -4.webp",
+        "innerpages images/Epe fome - 5.webp"
       ],
       "applicationImages": [
+        "innerpages images/epe industrial fome.jpeg",
+        "innerpages images/Antistatic Foam Packaging.png",
         "innerpages images/Epe fome .png",
-        "innerpages images/Epe fome -3.jpg",
-        "innerpages images/Epe fome-2.webp",
-        "innerpages images/Epe fome .png"
+        "innerpages images/Epe fome -4.webp"
       ],
       "features": [
         "Impact Protection",
@@ -40,7 +40,6 @@
       "applications": [
         "Automotive",
         "Electronics",
-        "Tooling",
         "Industrial Components"
       ],
       "specifications": [
@@ -101,9 +100,7 @@
       ],
       "applications": [
         "Automotive",
-        "Electronics",
-        "Industrial Machines",
-        "Tool Kits"
+        "Insulating"
       ],
       "specifications": [
         {
@@ -164,13 +161,12 @@
       "applications": [
         "Automotive",
         "Electronics",
-        "Consumer Goods",
-        "Tooling"
+        "Consumer Goods"
       ],
       "specifications": [
         {
           "name": "Material Type",
-          "value": "Polyethylene (PE)"
+          "value": "Polyurethane (PU)"
         },
         {
           "name": "Density Range",
@@ -208,14 +204,14 @@
       "featureImages": [
         "innerpages images/Antistatic Foam Packaging-2.png",
         "innerpages images/Antistatic Foam Packaging-3.jpg",
-        "innerpages images/Antistatic Foam Packaging.png",
-        "innerpages images/Antistatic Foam Packaging-2.png"
+        "innerpages images/Antistatic Foam Packaging-4.webp",
+        "innerpages images/Antistatic Foam Packaging-5.webp"
       ],
       "applicationImages": [
         "innerpages images/Antistatic Foam Packaging.png",
-        "innerpages images/Antistatic Foam Packaging-3.jpg",
-        "innerpages images/Antistatic Foam Packaging-2.png",
-        "innerpages images/Antistatic Foam Packaging.png"
+        "innerpages images/Antistatic Foam Packaging-4.webp",
+        "innerpages images/Antistatic Foam Packaging-5.webp",
+        "innerpages images/Antistatic Foam Packaging-3.jpg"
       ],
       "features": [
         "ESD Safe",
@@ -255,7 +251,7 @@
         "headline": "Automotive Dunnage Solutions",
         "subtitle": "Custom foam for automotive component protection",
         "description": "Protect critical automotive parts with precision-engineered foam packaging.",
-        "image": "innerpages images/automotive dannage.png",
+        "image": "innerpages images/auto-mobile Dunnage 2.jpeg",
         "cta": [
           "Explore Products",
           "View Applications"
@@ -265,19 +261,19 @@
         "heading": "About Automotive Dunnage",
         "content": "Our automotive dunnage foam is designed to securely hold components during transport and assembly, preventing damage and vibration."
       },
-      "overviewImage": "innerpages images/automotive dannage-2.webp",
-      "specsImage": "innerpages images/automotive dannage-3.jpg",
+      "overviewImage": "innerpages images/auto-mobile Dunnage 1.jpeg",
+      "specsImage": null,
       "featureImages": [
-        "innerpages images/automotive dannage-2.webp",
-        "innerpages images/automotive dannage-3.jpg",
-        "innerpages images/automotive dannage.png",
+        "innerpages images/auto-mobile Dunnage 3.jpeg",
+        "innerpages images/Assembly line.jpeg",
+        "innerpages images/auto-mobile Dunnage 1.jpeg",
         "innerpages images/automotive dannage-2.webp"
       ],
       "applicationImages": [
-        "innerpages images/automotive dannage.png",
-        "innerpages images/automotive dannage-3.jpg",
-        "innerpages images/automotive dannage-2.webp",
-        "innerpages images/automotive dannage.png"
+        "innerpages images/auto-mobile Dunnage 1.jpeg",
+        "innerpages images/auto-mobile Dunnage 2.jpeg",
+        "innerpages images/auto-mobile Dunnage 3.jpeg",
+        "innerpages images/automotive dannage-2.webp"
       ],
       "features": [
         "Custom Fit",
@@ -334,7 +330,7 @@
       "applicationImages": [
         "innerpages images/trolly dannage.png",
         "innerpages images/trolly dannage-3.png",
-        "innerpages images/trolly dannage-2.jpg",
+        "innerpages images/Assembly line.jpeg",
         "innerpages images/trolly dannage.png"
       ],
       "features": [
@@ -346,8 +342,7 @@
       "applications": [
         "Manufacturing",
         "Warehouse",
-        "Assembly Lines",
-        "Tooling"
+        "Assembly Lines"
       ],
       "specifications": [
         {
@@ -384,16 +379,16 @@
       "overviewImage": "innerpages images/toll kit-2.jpg",
       "specsImage": "innerpages images/toll kit.jpeg",
       "featureImages": [
-        "innerpages images/toll kit-2.jpg",
-        "innerpages images/toll kit.jpeg",
-        "innerpages images/toll kit-2.jpg",
-        "innerpages images/toll kit.jpeg"
+        "innerpages images/toolkit img1.jpeg",
+        "innerpages images/toolkit img2.jpeg",
+        "innerpages images/toolkit img3.jpeg",
+        "innerpages images/toll kit-2.jpg"
       ],
       "applicationImages": [
         "innerpages images/toll kit.jpeg",
-        "innerpages images/toll kit-2.jpg",
-        "innerpages images/toll kit.jpeg",
-        "innerpages images/toll kit-2.jpg"
+        "innerpages images/toolkit img1.jpeg",
+        "innerpages images/toolkit img2.jpeg",
+        "innerpages images/toolkit img3.jpeg"
       ],
       "features": [
         "Custom Inserts",
@@ -444,15 +439,15 @@
         "innerpages images/Defence Packaging-2.jpeg",
         "innerpages images/Defence Packaging-3.webp",
         "innerpages images/Defence Packaging.png",
+        "innerpages images/Defence Packaging-4.webp",
         "innerpages images/Defence Packaging-2.jpeg",
-        "innerpages images/Defence Packaging-3.webp",
-        "innerpages images/Defence Packaging.png"
+        "innerpages images/Defence Packaging-3.webp"
       ],
       "applicationImages": [
         "innerpages images/Defence Packaging.png",
-        "innerpages images/Defence Packaging-3.webp",
         "innerpages images/Defence Packaging-2.jpeg",
-        "innerpages images/Defence Packaging.png"
+        "innerpages images/Defence Packaging-4.webp",
+        "innerpages images/Defence Packaging-3.webp"
       ],
       "features": [
         "Heavy-duty impact protection",
@@ -534,11 +529,11 @@
       "specifications": [
         {
           "name": "Material Type",
-          "value": "Dummy gasket material"
+          "value": "EPDM Open Cell / Closed Cell"
         },
         {
-          "name": "Thickness Range",
-          "value": "To be specified"
+          "name": "Density",
+          "value": "80-150 kg/m\u00b3"
         },
         {
           "name": "Custom Cutting",

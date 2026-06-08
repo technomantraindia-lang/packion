@@ -1,3 +1,63 @@
+// Mobile Drawer Menu
+(function () {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const drawer = document.getElementById('mobileDrawer');
+    const overlay = document.getElementById('drawerOverlay');
+    const closeBtn = document.getElementById('drawerClose');
+    const productsToggle = document.getElementById('drawerProductsToggle');
+    const productsSubmenu = document.getElementById('drawerSubmenu');
+
+    if (!hamburger || !drawer) return;
+
+    function openDrawer() {
+        hamburger.classList.add('is-active');
+        drawer.classList.add('is-open');
+        if (overlay) overlay.classList.add('is-visible');
+        document.body.classList.add('drawer-open');
+    }
+
+    function closeDrawer() {
+        hamburger.classList.remove('is-active');
+        drawer.classList.remove('is-open');
+        if (overlay) overlay.classList.remove('is-visible');
+        document.body.classList.remove('drawer-open');
+    }
+
+    hamburger.addEventListener('click', function () {
+        if (drawer.classList.contains('is-open')) {
+            closeDrawer();
+        } else {
+            openDrawer();
+        }
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    if (overlay) overlay.addEventListener('click', closeDrawer);
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+            closeDrawer();
+        }
+    });
+
+    // Products accordion
+    if (productsToggle && productsSubmenu) {
+        productsToggle.addEventListener('click', function () {
+            const isExpanded = productsToggle.classList.contains('is-expanded');
+            productsToggle.classList.toggle('is-expanded', !isExpanded);
+            productsSubmenu.classList.toggle('is-expanded', !isExpanded);
+        });
+    }
+
+    // Close drawer on window resize past breakpoint
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 768 && drawer.classList.contains('is-open')) {
+            closeDrawer();
+        }
+    });
+})();
+
 // Applications Section Tabs
 function openAppTab(evt, tabId) {
     var i, tabcontent, tablinks;

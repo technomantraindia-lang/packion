@@ -224,6 +224,18 @@
     line-height: 1.75;
 }
 
+#hero-description {
+    background: linear-gradient(90deg, rgba(6, 36, 58, 0.75), rgba(6, 36, 58, 0.4));
+    border-left: 4px solid #6abbe2;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    backdrop-filter: blur(12px);
+    max-width: 440px;
+}
+
 .fm-hero-buttons {
     display: flex;
     gap: 14px;
@@ -316,6 +328,10 @@
     grid-template-columns: minmax(0, 0.9fr) minmax(380px, 1fr);
     gap: 56px;
     align-items: center;
+}
+
+.fm-specs-grid.fm-specs-no-image {
+    grid-template-columns: minmax(0, 1fr);
 }
 
 .fm-overview-left,

@@ -53,7 +53,7 @@ body {
     grid-template-columns: minmax(0, 1fr) minmax(380px, 0.78fr) !important;
     align-items: center !important;
     gap: 56px !important;
-    padding: 40px max(48px, calc((100vw - 1400px) / 2 + 48px)) 60px !important;
+    padding: 40px max(48px, calc((100vw - 1600px) / 2 + 48px)) 60px !important;
 }
 
 .spray-slide.active:not(.fluid-dynamics-slide) {
@@ -62,7 +62,7 @@ body {
 
 .spray-copy {
     position: absolute !important;
-    left: max(48px, calc((100vw - 1400px) / 2 + 48px)) !important;
+    left: max(48px, calc((100vw - 1600px) / 2 + 48px)) !important;
     top: 46% !important;
     z-index: 5 !important;
     width: min(40vw, 560px) !important;
@@ -74,7 +74,7 @@ body {
 .spray-product-img {
     position: absolute !important;
     top: -12px !important;
-    right: max(70px, calc((100vw - 1400px) / 2 + 70px)) !important;
+    right: max(70px, calc((100vw - 1600px) / 2 + 70px)) !important;
     z-index: 6 !important;
     width: min(42vw, 650px) !important;
 }
@@ -86,11 +86,11 @@ body {
 }
 
 .hero-slider-prev {
-    left: max(48px, calc((100vw - 1400px) / 2 + 48px)) !important;
+    left: max(48px, calc((100vw - 1600px) / 2 + 48px)) !important;
 }
 
 .hero-slider-next {
-    right: max(48px, calc((100vw - 1400px) / 2 + 48px)) !important;
+    right: max(48px, calc((100vw - 1600px) / 2 + 48px)) !important;
 }
 
 @media (max-width: 768px) {
@@ -157,7 +157,7 @@ body {
     grid-template-columns: minmax(0, 1fr) minmax(380px, 0.78fr) !important;
     align-items: center !important;
     gap: 56px !important;
-    padding: 40px max(48px, calc((100vw - 1400px) / 2 + 48px)) 60px !important;
+    padding: 40px max(48px, calc((100vw - 1600px) / 2 + 48px)) 60px !important;
 }
 
 .foam-slide {
@@ -189,7 +189,7 @@ body {
     position: relative !important;
     z-index: 3 !important;
     order: 2 !important;
-    max-width: 520px !important;
+    max-width: 700px !important;
     padding: 0 !important;
     align-self: center !important;
     display: flex !important;
@@ -202,6 +202,11 @@ body {
 .foam-slide h1 {
     font-size: clamp(2.45rem, 3.35vw, 3.75rem) !important;
     line-height: 1.08 !important;
+    max-width: 700px !important;
+}
+
+.foam-slide p.subtitle {
+    max-width: 620px !important;
 }
 
 
@@ -225,6 +230,356 @@ body {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
+}
+
+/* ==========================================
+   HAMBURGER BUTTON
+   ========================================== */
+.hamburger-btn {
+    display: none;
+    position: relative;
+    z-index: 9999;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-btn .ham-line {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 22px;
+    height: 2px;
+    background: #0a2540;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger-btn .ham-line:nth-child(1) { top: 12px; }
+.hamburger-btn .ham-line:nth-child(2) { top: 20px; }
+.hamburger-btn .ham-line:nth-child(3) { top: 28px; }
+
+/* Hamburger → X animation */
+.hamburger-btn.is-active .ham-line:nth-child(1) {
+    top: 20px;
+    transform: translateX(-50%) rotate(45deg);
+}
+.hamburger-btn.is-active .ham-line:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-50%) scaleX(0);
+}
+.hamburger-btn.is-active .ham-line:nth-child(3) {
+    top: 20px;
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+/* ==========================================
+   MOBILE DRAWER OVERLAY
+   ========================================== */
+.drawer-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(10, 37, 64, 0.45);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+}
+
+.drawer-overlay.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ==========================================
+   MOBILE DRAWER
+   ========================================== */
+.mobile-drawer {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: min(340px, 85vw);
+    height: 100vh;
+    height: 100dvh;
+    background: #ffffff;
+    box-shadow: -8px 0 40px rgba(10, 37, 64, 0.15);
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mobile-drawer.is-open {
+    transform: translateX(0);
+}
+
+/* Drawer header (close + logo) */
+.drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid rgba(6, 90, 152, 0.08);
+}
+
+.drawer-logo {
+    height: 32px;
+    width: auto;
+}
+
+.drawer-close {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(6, 90, 152, 0.06);
+    color: #0a2540;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.drawer-close:hover {
+    background: rgba(6, 90, 152, 0.12);
+    transform: rotate(90deg);
+}
+
+/* Drawer nav links */
+.drawer-nav {
+    padding: 16px 0 8px;
+}
+
+.drawer-nav-item {
+    display: block;
+    padding: 14px 28px;
+    color: #1a2b3c;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: color 0.25s ease, background 0.25s ease, padding-left 0.25s ease;
+    border-left: 3px solid transparent;
+    /* Staggered animation */
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.35s ease, transform 0.35s ease, color 0.25s ease, background 0.25s ease, padding-left 0.25s ease, border-color 0.25s ease;
+}
+
+.mobile-drawer.is-open .drawer-nav-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.mobile-drawer.is-open .drawer-nav-item:nth-child(1) { transition-delay: 0.08s; }
+.mobile-drawer.is-open .drawer-nav-item:nth-child(2) { transition-delay: 0.14s; }
+.mobile-drawer.is-open .drawer-nav-item:nth-child(3) { transition-delay: 0.20s; }
+.mobile-drawer.is-open .drawer-nav-item:nth-child(4) { transition-delay: 0.26s; }
+.mobile-drawer.is-open .drawer-nav-item:nth-child(5) { transition-delay: 0.32s; }
+
+.drawer-nav-item:hover,
+.drawer-nav-item.active {
+    color: #065a98;
+    background: rgba(6, 90, 152, 0.04);
+    border-left-color: #065a98;
+    padding-left: 32px;
+}
+
+/* Products accordion trigger */
+.drawer-products-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 28px;
+    border: 0;
+    background: transparent;
+    color: #1a2b3c;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    border-left: 3px solid transparent;
+    transition: color 0.25s ease, background 0.25s ease, padding-left 0.25s ease, border-color 0.25s ease;
+    /* Stagger - slot 3 */
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.35s ease, transform 0.35s ease, color 0.25s ease, background 0.25s ease, padding-left 0.25s ease, border-color 0.25s ease;
+}
+
+.mobile-drawer.is-open .drawer-products-toggle {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.20s;
+}
+
+.drawer-products-toggle:hover,
+.drawer-products-toggle.is-expanded {
+    color: #065a98;
+    background: rgba(6, 90, 152, 0.04);
+    border-left-color: #065a98;
+    padding-left: 32px;
+}
+
+.drawer-chevron {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.drawer-products-toggle.is-expanded .drawer-chevron {
+    transform: rotate(180deg);
+}
+
+/* Product submenu */
+.drawer-submenu {
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(6, 90, 152, 0.02);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drawer-submenu.is-expanded {
+    max-height: 600px;
+}
+
+.drawer-submenu-group {
+    padding: 8px 0 4px;
+}
+
+.drawer-submenu-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 28px 6px 38px;
+    color: #065a98;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.drawer-submenu-label svg {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+}
+
+.drawer-sub-link {
+    display: block;
+    padding: 10px 28px 10px 56px;
+    color: #3d5061;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease, background 0.2s ease, padding-left 0.2s ease;
+}
+
+.drawer-sub-link:hover {
+    color: #065a98;
+    background: rgba(6, 90, 152, 0.04);
+    padding-left: 60px;
+}
+
+/* Drawer divider */
+.drawer-divider {
+    height: 1px;
+    margin: 8px 24px;
+    background: rgba(6, 90, 152, 0.08);
+}
+
+/* Drawer CTA button */
+.drawer-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px 24px 24px;
+    padding: 14px 24px;
+    border-radius: 8px;
+    background: #065a98;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 24px rgba(6, 90, 152, 0.22);
+}
+
+.drawer-cta:hover {
+    background: #044475;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(6, 90, 152, 0.3);
+}
+
+.drawer-cta svg {
+    transition: transform 0.3s ease;
+}
+
+.drawer-cta:hover svg {
+    transform: translateX(4px);
+}
+
+/* Drawer contact info */
+.drawer-contact {
+    padding: 0 28px 28px;
+    color: #526474;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.drawer-contact strong {
+    color: #0a2540;
+    font-weight: 700;
+}
+
+/* Body no-scroll when drawer open */
+body.drawer-open {
+    overflow: hidden;
+}
+
+/* ==========================================
+   RESPONSIVE: Show hamburger, hide desktop nav
+   ========================================== */
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: inline-flex;
+    }
+
+    .mobile-drawer,
+    .drawer-overlay {
+        display: block;
+    }
+
+    /* Hide the desktop nav and quote button on mobile */
+    #site-header header nav,
+    #site-header header .quote-btn {
+        display: none !important;
+    }
+
+    /* Fix header layout for mobile with hamburger */
+    #site-header header {
+        flex-direction: row !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+    }
 }
 
 /* ==========================================
@@ -280,12 +635,12 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
     gap: 68px;
-    padding: 42px max(48px, calc((100vw - 1400px) / 2 + 48px)) 96px;
+    padding: 42px max(48px, calc((100vw - 1600px) / 2 + 48px)) 96px;
 }
 
 .foam-slide {
@@ -836,7 +1191,7 @@ p.subtitle {
 
 .spray-copy {
     position: absolute;
-    left: max(48px, calc((100vw - 1400px) / 2 + 48px));
+    left: max(48px, calc((100vw - 1600px) / 2 + 48px));
     top: 50%;
     transform: translateY(-50%);
     z-index: 3;
@@ -920,7 +1275,7 @@ p.subtitle {
     position: absolute;
     right: 0;
     top: 0;
-    width: calc((100vw - min(100vw, 1400px)) / 2 + 730px);
+    width: calc((100vw - min(100vw, 1600px)) / 2 + 830px);
     height: 100%;
     background:
         radial-gradient(circle at 34% 52%, rgba(44,127,184,0.3), transparent 28%),
@@ -939,7 +1294,7 @@ p.subtitle {
 .spray-product-img {
     position: absolute;
     top: -28px;
-    right: max(72px, calc((100vw - 1400px) / 2 + 72px));
+    right: max(72px, calc((100vw - 1600px) / 2 + 72px));
     z-index: 5;
     width: min(42vw, 660px);
     transform: rotate(-5deg);
@@ -983,7 +1338,7 @@ p.subtitle {
 
 .spray-dots {
     position: absolute;
-    right: max(52px, calc((100vw - 1400px) / 2 + 52px));
+    right: max(52px, calc((100vw - 1600px) / 2 + 52px));
     top: 145px;
     z-index: 4;
     width: 96px;
@@ -995,7 +1350,7 @@ p.subtitle {
 
 .spray-callouts {
     position: absolute;
-    right: max(64px, calc((100vw - 1400px) / 2 + 64px));
+    right: max(64px, calc((100vw - 1600px) / 2 + 64px));
     top: 28%;
     z-index: 6;
     display: grid;
@@ -1128,14 +1483,14 @@ p.subtitle {
 }
 
 .hero-slider-prev {
-    left: max(48px, calc((100vw - 1400px) / 2 + 48px));
+    left: max(48px, calc((100vw - 1600px) / 2 + 48px));
     background: #ffffff;
     color: #08213a;
     box-shadow: 0 18px 34px rgba(10,37,64,0.12);
 }
 
 .hero-slider-next {
-    right: max(48px, calc((100vw - 1400px) / 2 + 48px));
+    right: max(48px, calc((100vw - 1600px) / 2 + 48px));
     background: #1269bd;
     color: #ffffff;
     box-shadow: 0 18px 34px rgba(18,105,189,0.26);
@@ -2343,11 +2698,11 @@ p.subtitle {
     z-index: 1000;
     display: flex;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 80px;
+    padding: 30px 48px;
 }
 
 #site-header nav > ul {
@@ -4169,6 +4524,7 @@ p.subtitle {
     .product-item {
         flex: 1 1 100%;
         width: 100%;
+        max-width: none !important;
         border-radius: 8px;
         padding: 10px 14px;
         overflow: hidden;
@@ -4336,7 +4692,7 @@ p.subtitle {
     grid-template-columns: minmax(0, 1fr) minmax(380px, 0.78fr) !important;
     align-items: center !important;
     gap: 56px !important;
-    padding: 52px max(48px, calc((100vw - 1400px) / 2 + 48px)) 92px !important;
+    padding: 52px max(48px, calc((100vw - 1600px) / 2 + 48px)) 92px !important;
 }
 
 .spray-slide.active:not(.tech-scanning-slide):not(.fluid-dynamics-slide) {
@@ -4345,7 +4701,7 @@ p.subtitle {
 
 .spray-copy {
     position: absolute !important;
-    left: max(48px, calc((100vw - 1400px) / 2 + 48px)) !important;
+    left: max(48px, calc((100vw - 1600px) / 2 + 48px)) !important;
     top: 46% !important;
     z-index: 5 !important;
     width: min(40vw, 560px) !important;
@@ -4357,7 +4713,7 @@ p.subtitle {
 .spray-product-img {
     position: absolute !important;
     top: -12px !important;
-    right: max(70px, calc((100vw - 1400px) / 2 + 70px)) !important;
+    right: max(70px, calc((100vw - 1600px) / 2 + 70px)) !important;
     z-index: 6 !important;
     width: min(42vw, 650px) !important;
 }
@@ -4426,7 +4782,7 @@ p.subtitle {
     grid-template-columns: 1.02fr 1.05fr 0.82fr !important;
     align-items: center !important;
     gap: 24px !important;
-    padding: 0 max(48px, calc((100vw - 1400px) / 2 + 48px)) 40px !important;
+    padding: 0 max(48px, calc((100vw - 1600px) / 2 + 48px)) 40px !important;
     background:
         radial-gradient(ellipse at 70% 50%, rgba(0, 114, 255, 0.18) 0%, transparent 55%),
         radial-gradient(ellipse at 20% 80%, rgba(0, 240, 255, 0.10) 0%, transparent 45%),
@@ -5637,3 +5993,302 @@ p.subtitle {
     opacity: 1 !important;
     transform: translateX(0) !important;
 }
+
+/* ==========================================================
+   MOBILE HERO REPAIRS (VISIBILITY & ARROW OVERLAP FIX)
+   ========================================================== */
+@media (max-width: 768px) {
+    /* 1. Prevent active hero slide from being absolute-positioned so it expands naturally */
+    .hero-slide.active {
+        position: relative !important;
+        height: auto !important;
+        min-height: 100% !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* 2. Hide the dark blue background polygon on foam slide so it doesn't overlap/hide the text */
+    .foam-slide::before {
+        display: none !important;
+    }
+
+    /* 3. Adjust the foam slide layout and elements to stack properly */
+    .foam-slide.active {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 30px 20px 100px !important; /* Extra bottom padding for arrows */
+        gap: 24px !important;
+    }
+
+    .foam-slide .hero-image-panel {
+        height: 320px !important;
+        min-height: auto !important;
+        max-height: none !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        order: 1 !important; /* Slider image stays on top */
+    }
+
+    .foam-slide .left-col {
+        order: 2 !important; /* Text is below slider */
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 24px 0 0 !important;
+        margin-top: 0 !important;
+    }
+
+    /* 4. Ensure fluid dynamics slide has enough bottom padding for arrows */
+    .fluid-dynamics-slide.active {
+        padding-bottom: 100px !important;
+    }
+
+    /* 5. Reposition the slider dots so they don't overlap the text */
+    .hero-slider-status {
+        bottom: 28px !important;
+        z-index: 21 !important;
+    }
+
+    /* 6. Style dots to be readable on both light (foam) and dark (spray) background slides */
+    .hero-slider-dot {
+        border-color: rgba(10, 37, 64, 0.4) !important;
+        background: rgba(255, 255, 255, 0.7) !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .hero-slider-dot.active {
+        background: #1269bd !important;
+        border-color: #1269bd !important;
+    }
+}
+
+/* ==========================================================
+   3D ISOMETRIC VECTOR GRAPHICS STYLING & ANIMATIONS
+   ========================================================== */
+
+/* Foam Solutions Resting Graphic Styles */
+.graphic-foam .foam-box {
+    transform-origin: 200px 220px;
+    transition: transform 0.3s ease;
+}
+
+/* Animations for Foam Boxes */
+.graphic-foam .box-main {
+    animation: floatFoamMain 5s ease-in-out infinite;
+}
+
+.graphic-foam .box-left {
+    transform-origin: 100px 160px;
+    animation: floatFoamLeft 4.5s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.graphic-foam .box-right {
+    transform-origin: 305px 250px;
+    animation: floatFoamRight 5.5s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+
+/* Floating Animations */
+@keyframes floatFoamMain {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes floatFoamLeft {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-8px) scale(1.02); }
+}
+
+@keyframes floatFoamRight {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-10px) scale(0.98); }
+}
+
+/* Shadow animations linked to floating boxes */
+.graphic-foam .foam-shadow {
+    transform-origin: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.graphic-foam .shadow-main {
+    transform-origin: 200px 340px;
+    animation: shadowFoamMain 5s ease-in-out infinite;
+}
+
+.graphic-foam .shadow-left {
+    transform-origin: 100px 225px;
+    animation: shadowFoamLeft 4.5s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.graphic-foam .shadow-right {
+    transform-origin: 305px 335px;
+    animation: shadowFoamRight 5.5s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+
+@keyframes shadowFoamMain {
+    0%, 100% { transform: scale(1); opacity: 0.95; }
+    50% { transform: scale(0.88); opacity: 0.55; }
+}
+
+@keyframes shadowFoamLeft {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(0.85); opacity: 0.5; }
+}
+
+@keyframes shadowFoamRight {
+    0%, 100% { transform: scale(1); opacity: 0.95; }
+    50% { transform: scale(0.86); opacity: 0.55; }
+}
+
+/* Foam central core glow pulsing */
+.graphic-foam .foam-core-glow {
+    animation: foamGlowPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes foamGlowPulse {
+    0% { r: 48px; opacity: 0.25; }
+    100% { r: 62px; opacity: 0.45; }
+}
+
+
+/* Spray Technology Resting Graphic Styles */
+.graphic-spray .spray-console-block {
+    transform-origin: 200px 240px;
+    animation: floatConsole 6s ease-in-out infinite;
+}
+
+.graphic-spray .spray-shadow.shadow-console {
+    transform-origin: 200px 355px;
+    animation: shadowConsole 6s ease-in-out infinite;
+}
+
+@keyframes floatConsole {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes shadowConsole {
+    0%, 100% { transform: scale(1); opacity: 0.95; }
+    50% { transform: scale(0.95); opacity: 0.75; }
+}
+
+/* Spray Telemetry Lines animations */
+.graphic-spray .telemetry-line-1,
+.graphic-spray .telemetry-line-2,
+.graphic-spray .telemetry-line-3 {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    animation: telemetryScan 3s linear infinite;
+}
+
+.graphic-spray .telemetry-line-1 { animation-delay: 0s; }
+.graphic-spray .telemetry-line-2 { animation-delay: 1s; }
+.graphic-spray .telemetry-line-3 { animation-delay: 1.8s; }
+
+@keyframes telemetryScan {
+    0% { stroke-dashoffset: 60; opacity: 0.3; }
+    50% { stroke-dashoffset: 0; opacity: 1; }
+    100% { stroke-dashoffset: -60; opacity: 0.3; }
+}
+
+/* LEDs Blinking */
+.graphic-spray .telemetry-led-1,
+.graphic-spray .telemetry-led-2,
+.graphic-spray .telemetry-led-3 {
+    animation: ledBlink 1s infinite alternate;
+}
+
+.graphic-spray .telemetry-led-1 { animation-delay: 0.2s; animation-duration: 0.8s; }
+.graphic-spray .telemetry-led-2 { animation-delay: 0.5s; animation-duration: 1.2s; }
+.graphic-spray .telemetry-led-3 { animation-delay: 0.8s; animation-duration: 0.6s; }
+
+@keyframes ledBlink {
+    0% { opacity: 0.3; filter: drop-shadow(0 0 1px #00f2fe); }
+    100% { opacity: 1; filter: drop-shadow(0 0 4px #00f2fe); }
+}
+
+/* Nozzle block float */
+.graphic-spray .spray-nozzle-block {
+    transform-origin: 200px 100px;
+    animation: floatNozzle 4.5s ease-in-out infinite;
+}
+
+@keyframes floatNozzle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* Nozzle radial glow pulsing */
+.graphic-spray .nozzle-glow {
+    animation: nozzleGlowPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes nozzleGlowPulse {
+    0% { r: 25px; opacity: 0.2; }
+    100% { r: 35px; opacity: 0.55; }
+}
+
+/* Spray Wave Rings Pulses */
+.graphic-spray .spray-ring {
+    transform-origin: 200px 124px;
+    animation: sprayWaveOut 4s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
+}
+
+.graphic-spray .ring-1 { animation-delay: 0s; }
+.graphic-spray .ring-2 { animation-delay: 1s; }
+.graphic-spray .ring-3 { animation-delay: 2s; }
+.graphic-spray .ring-4 { animation-delay: 3s; }
+
+@keyframes sprayWaveOut {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+        stroke-width: 3px;
+    }
+    10% {
+        opacity: 0.95;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+        stroke-width: 0.8px;
+    }
+}
+
+/* Spray Mist Particles */
+.graphic-spray .spray-mist {
+    transform-origin: 200px 124px;
+    animation: sprayMistDrift 5s ease-out infinite;
+}
+
+.graphic-spray .mist-1 { animation-delay: 0.2s; animation-duration: 4.2s; }
+.graphic-spray .mist-2 { animation-delay: 1.1s; animation-duration: 5s; }
+.graphic-spray .mist-3 { animation-delay: 2.3s; animation-duration: 4.5s; }
+.graphic-spray .mist-4 { animation-delay: 0.7s; animation-duration: 4.8s; }
+.graphic-spray .mist-5 { animation-delay: 1.8s; animation-duration: 5.2s; }
+.graphic-spray .mist-6 { animation-delay: 2.9s; animation-duration: 4.7s; }
+
+@keyframes sprayMistDrift {
+    0% {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.85;
+    }
+    100% {
+        transform: translate(var(--drift-x, -25px), 130px) scale(1.3);
+        opacity: 0;
+    }
+}
+
+/* Customize drift direction for mist particles */
+.graphic-spray .mist-1 { --drift-x: -35px; }
+.graphic-spray .mist-2 { --drift-x: 35px; }
+.graphic-spray .mist-3 { --drift-x: -45px; }
+.graphic-spray .mist-4 { --drift-x: 45px; }
+.graphic-spray .mist-5 { --drift-x: -15px; }
+.graphic-spray .mist-6 { --drift-x: 15px; }
+
