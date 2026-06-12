@@ -3895,11 +3895,25 @@ p.subtitle {
     gap: 40px;
 }
 
-.footer-col h3 {
-    font-size: 1.3rem;
-    font-weight: 800;
-    margin-bottom: 16px;
-    color: #ffffff;
+.footer-logo {
+    display: flex;
+    width: min(100%, 320px);
+    min-height: 92px;
+    margin-bottom: 18px;
+    padding: 12px 16px;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.footer-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
 }
 
 .brand-col p {
@@ -6291,4 +6305,3 @@ p.subtitle {
 .graphic-spray .mist-4 { --drift-x: 45px; }
 .graphic-spray .mist-5 { --drift-x: -15px; }
 .graphic-spray .mist-6 { --drift-x: 15px; }
-
