@@ -106,7 +106,7 @@
     </div>
     <div class="drawer-divider"></div>
     <a href="contact.html" class="drawer-cta">Get a Quote <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6H15M15 6L10 1M15 6L10 11"/></svg></a>
-    <div class="drawer-contact"><strong>Email:</strong> info@packion.co.in<br><strong>Phone:</strong> 08275448503</div>
+    <div class="drawer-contact"><strong>Email:</strong> info@packion.co.in<br><strong>Phone:</strong> +91 82754 48503</div>
 </nav>
         </div>
 
@@ -305,8 +305,9 @@
                     <h4>Contact</h4>
                     <ul class="contact-list">
                         <li><strong>Email:</strong> info@packion.co.in</li>
-                        <li><strong>Phone:</strong> 08275448503</li>
-                        <li><strong>Location:</strong> Pune, Maharashtra, India</li>
+                        <li><strong>Phone:</strong> +91 82754 48503</li>
+                        <li><strong>Office:</strong> C-1203, Vision Aristo, Kiwale, Pimpri-Chinchwad, Pune, Maharashtra 412101</li>
+                        <li><strong>Factory:</strong> MNO1497, Wagholi-Rahu Road, Kesnand, Maharashtra 412207</li>
                         <li><strong>GSTIN:</strong> 27AAQCP9166K1ZH</li>
                     </ul>
                 </div>
@@ -441,17 +442,19 @@
                     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="9" width="22" height="9" rx="2"/><path d="M5 9V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>`
                 ];
 
-                product.features.forEach((featName, index) => {
+                product.features.forEach((feat, index) => {
                     const card = document.createElement('div');
                     card.className = 'fm-feature-card';
+                    const title = typeof feat === 'object' ? feat.title : feat;
+                    const desc = typeof feat === 'object' ? feat.desc : 'High-quality engineered solution designed for industrial applications, ensuring safety, reliability, and robust performance under operational conditions.';
                     const featImgSrc = product.featureImages && product.featureImages[index];
                     const visualBlock = featImgSrc
-                        ? `<div class="fm-feature-img"><img src="${featImgSrc}" alt="${featName}"></div>`
+                        ? `<div class="fm-feature-img"><img src="${featImgSrc}" alt="${title}"></div>`
                         : `<div class="fm-feature-icon">${featureIcons[index % featureIcons.length]}</div>`;
                     card.innerHTML = `
                         ${visualBlock}
-                        <h3>${featName}</h3>
-                        <p>High-quality engineered solution designed for industrial applications, ensuring safety, reliability, and robust performance under operational conditions.</p>
+                        <h3>${title}</h3>
+                        <p>${desc}</p>
                     `;
                     featuresGrid.appendChild(card);
                 });
@@ -479,17 +482,19 @@
                     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>`
                 ];
 
-                product.applications.forEach((appName, index) => {
+                product.applications.forEach((app, index) => {
                     const card = document.createElement('div');
                     card.className = 'fm-app-card';
+                    const title = typeof app === 'object' ? app.title : app;
+                    const desc = typeof app === 'object' ? app.desc : `Fully compliant with industrial standards to support ${title.toLowerCase()} transit, protective storage and operational assembly lines.`;
                     const appImgSrc = product.applicationImages && (product.applicationImages[index] || product.applicationImages[index % product.applicationImages.length]);
                     const visualBlock = appImgSrc
-                        ? `<div class="fm-app-img"><img src="${appImgSrc}" alt="${appName}"></div>`
+                        ? `<div class="fm-app-img"><img src="${appImgSrc}" alt="${title}"></div>`
                         : `<div class="fm-app-icon">${appIcons[index % appIcons.length]}</div>`;
                     card.innerHTML = `
                         ${visualBlock}
-                        <h4>${appName}</h4>
-                        <p>Fully compliant with industrial standards to support ${appName.toLowerCase()} transit, protective storage and operational assembly lines.</p>
+                        <h4>${title}</h4>
+                        <p>${desc}</p>
                     `;
                     appsGrid.appendChild(card);
                 });

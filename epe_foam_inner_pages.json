@@ -32,15 +32,36 @@
         "innerpages images/Epe fome -4.webp"
       ],
       "features": [
-        "Impact Protection",
-        "Custom Cut Foam",
-        "Antistatic Options",
-        "Reusable Dunnage"
+        {
+          "title": "Impact Protection",
+          "desc": "Excellent shock-absorbing properties cushion fragile products, dampening impact and vibration during transport."
+        },
+        {
+          "title": "Custom Cut Foam",
+          "desc": "Precision-machined cavities tailor-made to match product contours, preventing parts from sliding or clashing."
+        },
+        {
+          "title": "Antistatic Options",
+          "desc": "Available with ESD protection additives to safely dissipate electrostatic charges for delicate electronics."
+        },
+        {
+          "title": "Reusable Dunnage",
+          "desc": "Highly resilient structures designed for repeated use in closed-loop logistics and internal plant handling."
+        }
       ],
       "applications": [
-        "Automotive",
-        "Electronics",
-        "Industrial Components"
+        {
+          "title": "Automotive",
+          "desc": "Protects critical components like instrument panels, lights, and engines from transit damage."
+        },
+        {
+          "title": "Electronics",
+          "desc": "Shields sensitive PCBs, semiconductor devices, and high-value modules from ESD and drop hazards."
+        },
+        {
+          "title": "Industrial Components",
+          "desc": "Provides robust cushioning for heavy machinery parts, tools, and metal sub-assemblies."
+        }
       ],
       "specifications": [
         {
@@ -49,7 +70,7 @@
         },
         {
           "name": "Density Range",
-          "value": "15-30 kg/m\u00b3"
+          "value": "15-30 kg/m³"
         },
         {
           "name": "Custom Cuts",
@@ -93,14 +114,32 @@
         "innerpages images/XLPE -2.jpg"
       ],
       "features": [
-        "High Durability",
-        "Custom Shape Options",
-        "Recyclable Material",
-        "Lightweight Protection"
+        {
+          "title": "High Durability",
+          "desc": "Resistant to wear, tear, and multiple impacts, offering long-lasting product protection in demanding environments."
+        },
+        {
+          "title": "Custom Shape Options",
+          "desc": "Fine cell structure allows precise routing, laser-cutting, and multi-layer laminations for complex parts."
+        },
+        {
+          "title": "Recyclable Material",
+          "desc": "Environmentally friendly, non-crosslinked alternative options that support corporate sustainability goals."
+        },
+        {
+          "title": "Lightweight Protection",
+          "desc": "Adds virtually no extra weight to shipments, reducing fuel costs and freight expenses."
+        }
       ],
       "applications": [
-        "Automotive",
-        "Insulating"
+        {
+          "title": "Automotive",
+          "desc": "Custom trays and dunnage inserts to secure body panels, engine parts, and trim pieces."
+        },
+        {
+          "title": "Insulating",
+          "desc": "Provides excellent thermal insulation and moisture resistance for HVAC, aerospace, and construction components."
+        }
       ],
       "specifications": [
         {
@@ -109,7 +148,7 @@
         },
         {
           "name": "Density Range",
-          "value": "20-40 kg/m\u00b3"
+          "value": "20-40 kg/m³"
         },
         {
           "name": "Custom Cuts",
@@ -127,7 +166,7 @@
       "hero": {
         "headline": "Reliable PU Foam Packaging",
         "subtitle": "Impact and vibration protection for industrial components",
-        "description": "Custom PE foam solutions designed for protection, cushioning, and efficient storage.",
+        "description": "Custom PU foam solutions designed for protection, delicate cushioning, and efficient storage.",
         "image": "innerpages images/pu fome packging.jpg",
         "cta": [
           "Explore Products",
@@ -136,7 +175,7 @@
       },
       "about": {
         "heading": "About PU Foam Packaging",
-        "content": "PE foam offers lightweight, flexible, and protective packaging ideal for sensitive industrial components during transport and storage."
+        "content": "PU foam offers lightweight, flexible, and protective packaging ideal for sensitive industrial components during transport and storage."
       },
       "overviewImage": "innerpages images/pu fome packging-2.avif",
       "specsImage": "innerpages images/pu fome packging-3.jpg",
@@ -153,15 +192,36 @@
         "innerpages images/pu fome packging.jpg"
       ],
       "features": [
-        "Lightweight Material",
-        "Shock Absorption",
-        "Custom Designs",
-        "Reusable"
+        {
+          "title": "Lightweight Material",
+          "desc": "Extremely low density provides delicate cushioning without adding bulk or cargo weight."
+        },
+        {
+          "title": "Shock Absorption",
+          "desc": "Open-cell structure compresses easily to absorb micro-shocks, ideal for delicate and lightweight items."
+        },
+        {
+          "title": "Custom Designs",
+          "desc": "Easily molded, profile-cut, or egg-crate shaped to wrap around irregular surfaces seamlessly."
+        },
+        {
+          "title": "Reusable",
+          "desc": "Resilient foam returns to its original shape after compression, perfect for storage cases and kits."
+        }
       ],
       "applications": [
-        "Automotive",
-        "Electronics",
-        "Consumer Goods"
+        {
+          "title": "Automotive",
+          "desc": "Protects mirrors, interior trims, and electronic dials from scratching during assembly."
+        },
+        {
+          "title": "Electronics",
+          "desc": "Soft lining for enclosures and transit cases carrying sensors, cameras, and measurement devices."
+        },
+        {
+          "title": "Consumer Goods",
+          "desc": "Premium packaging inserts for consumer products, diagnostics, and retail equipment."
+        }
       ],
       "specifications": [
         {
@@ -170,7 +230,7 @@
         },
         {
           "name": "Density Range",
-          "value": "10-25 kg/m\u00b3"
+          "value": "10-25 kg/m³"
         },
         {
           "name": "Custom Cuts",
@@ -214,16 +274,40 @@
         "innerpages images/Antistatic Foam Packaging-3.jpg"
       ],
       "features": [
-        "ESD Safe",
-        "Custom Cuts",
-        "Impact Resistant",
-        "Reusable"
+        {
+          "title": "ESD Safe",
+          "desc": "Engineered with anti-static agents to control surface resistivity, preventing electrostatic charge buildup."
+        },
+        {
+          "title": "Custom Cuts",
+          "desc": "Tailored trays and boxes keep components separated, organized, and physically protected."
+        },
+        {
+          "title": "Impact Resistant",
+          "desc": "Combines electrical safety with excellent physical cushioning to prevent mechanical drop damage."
+        },
+        {
+          "title": "Reusable",
+          "desc": "Maintains its antistatic properties over multiple uses, making it cost-effective for assembly lines."
+        }
       ],
       "applications": [
-        "Electronics",
-        "Circuit Boards",
-        "Industrial Sensors",
-        "Medical Devices"
+        {
+          "title": "Electronics",
+          "desc": "Safe storage for static-sensitive computer boards, microchips, and electronic sub-assemblies."
+        },
+        {
+          "title": "Circuit Boards",
+          "desc": "Custom-grooved foam trays hold PCBs upright and secure during manufacturing and testing."
+        },
+        {
+          "title": "Industrial Sensors",
+          "desc": "Shields precision gauges and transceivers from both physical shock and electrostatic fields."
+        },
+        {
+          "title": "Medical Devices",
+          "desc": "Ensures sterile and ESD-safe transit for diagnostic tools, pumps, and sensitive monitors."
+        }
       ],
       "specifications": [
         {
@@ -232,7 +316,7 @@
         },
         {
           "name": "Density Range",
-          "value": "15-25 kg/m\u00b3"
+          "value": "15-25 kg/m³"
         },
         {
           "name": "Custom Cuts",
@@ -276,21 +360,49 @@
         "innerpages images/automotive dannage-2.webp"
       ],
       "features": [
-        "Custom Fit",
-        "Impact Resistant",
-        "Lightweight",
-        "Reusable"
+        {
+          "title": "Custom Fit",
+          "desc": "Individually contoured slots align with complex automotive parts to eliminate shipping scratches."
+        },
+        {
+          "title": "Impact Resistant",
+          "desc": "Prevents metal-on-metal contact, keeping painted, chrome, and structural parts in pristine condition."
+        },
+        {
+          "title": "Lightweight",
+          "desc": "Facilitates easy manual handling and quick insertion of components into transport racks."
+        },
+        {
+          "title": "Reusable",
+          "desc": "Long lifespan in factory-to-dealer loops, drastically reducing single-use packaging waste."
+        }
       ],
       "applications": [
-        "Automotive Components",
-        "Engine Parts",
-        "Suspension Systems",
-        "Electronics Modules"
+        {
+          "title": "Automotive Components",
+          "desc": "Designed for transport racks carrying door panels, grilles, fenders, and mirrors."
+        },
+        {
+          "title": "Engine Parts",
+          "desc": "Holds heavy pistons, valves, and metal components securely without tearing."
+        },
+        {
+          "title": "Suspension Systems",
+          "desc": "Absorbs vibration for steering gears, shock absorbers, and heavy axle assemblies."
+        },
+        {
+          "title": "Electronics Modules",
+          "desc": "Protects electronic control units (ECUs) and wiring harnesses from mechanical shocks."
+        }
       ],
       "specifications": [
         {
           "name": "Material Type",
-          "value": "EPE / PE Foam"
+          "value": "XLPE Foam"
+        },
+        {
+          "name": "Density",
+          "value": "70 Kg/m3 to 150 Kg/m3"
         },
         {
           "name": "Custom Cuts",
@@ -306,7 +418,7 @@
       "id": 6,
       "title": "Trolley Dunnage",
       "hero": {
-        "headline": "Trolley Foam Packaging",
+        "headline": "Trolley Dunnage",
         "subtitle": "Efficient transport and storage protection",
         "description": "Custom foam trays for trolleys and mobile storage units.",
         "image": "innerpages images/trolly dannage.png",
@@ -334,20 +446,45 @@
         "innerpages images/trolly dannage.png"
       ],
       "features": [
-        "Custom Trays",
-        "Impact Resistant",
-        "Lightweight",
-        "Reusable"
+        {
+          "title": "Custom Trays",
+          "desc": "Molded or routed trays designed to drop perfectly into standard factory push-carts and trolleys."
+        },
+        {
+          "title": "Impact Resistant",
+          "desc": "Dampens floor vibrations and collision shocks as trolleys move across factory floors."
+        },
+        {
+          "title": "Lightweight",
+          "desc": "Reduces overall cart weight, enabling operators to move loaded trolleys with minimal effort."
+        },
+        {
+          "title": "Reusable",
+          "desc": "Extremely rugged construction tolerates chemical exposure and continuous warehouse use."
+        }
       ],
       "applications": [
-        "Manufacturing",
-        "Warehouse",
-        "Assembly Lines"
+        {
+          "title": "Manufacturing",
+          "desc": "Secures components at work-in-progress stations during multi-stage assembly."
+        },
+        {
+          "title": "Warehouse",
+          "desc": "Organizes picking bins and storage shelves, protecting materials from dust and friction."
+        },
+        {
+          "title": "Assembly Lines",
+          "desc": "Delivers kitted parts directly to operators in the exact sequence and orientation needed."
+        }
       ],
       "specifications": [
         {
           "name": "Material Type",
-          "value": "EPE / PE Foam"
+          "value": "XLPE Foam"
+        },
+        {
+          "name": "Density",
+          "value": "70 Kg/m3 to 150 Kg/m3"
         },
         {
           "name": "Custom Trays",
@@ -380,31 +517,56 @@
       "specsImage": "innerpages images/toll kit.jpeg",
       "featureImages": [
         "innerpages images/toolkit img1.jpeg",
-        "innerpages images/toolkit img2.jpeg",
-        "innerpages images/toolkit img3.jpeg",
+        "innerpages images/toolkit img2.png",
+        "innerpages images/toolkit img3 - Edited.png",
         "innerpages images/toll kit-2.jpg"
       ],
       "applicationImages": [
         "innerpages images/toll kit.jpeg",
         "innerpages images/toolkit img1.jpeg",
-        "innerpages images/toolkit img2.jpeg",
-        "innerpages images/toolkit img3.jpeg"
+        "innerpages images/toolkit img2.png",
+        "innerpages images/toolkit img3 - Edited.png"
       ],
       "features": [
-        "Custom Inserts",
-        "Impact Resistant",
-        "Lightweight",
-        "Reusable"
+        {
+          "title": "Custom Inserts",
+          "desc": "Multi-layered two-tone shadow boards make missing tools instantly visible at a glance."
+        },
+        {
+          "title": "Impact Resistant",
+          "desc": "Prevents tools, calibrators, and micrometers from clashing and losing calibration."
+        },
+        {
+          "title": "Lightweight",
+          "desc": "Ideal for portable field technician kits, flight cases, and mobile maintenance setups."
+        },
+        {
+          "title": "Reusable",
+          "desc": "Dense foam resists oil, grease, and industrial solvents, maintaining its shape for years."
+        }
       ],
       "applications": [
-        "Tool Kits",
-        "Hardware Storage",
-        "Industrial Components"
+        {
+          "title": "Tool Kits",
+          "desc": "Organizes screwdrivers, wrenches, sockets, and specialty equipment in heavy-duty cases."
+        },
+        {
+          "title": "Hardware Storage",
+          "desc": "Secures fasteners, drill bits, and specialized fittings in structured drawer trays."
+        },
+        {
+          "title": "Industrial Components",
+          "desc": "Protects high-value inspection gauges, lasers, and optical measurement devices."
+        }
       ],
       "specifications": [
         {
           "name": "Material Type",
-          "value": "EPE / PE Foam"
+          "value": "EVA Foam"
+        },
+        {
+          "name": "Density",
+          "value": "40 Kg/m3 to 70 Kg/m3"
         },
         {
           "name": "Custom Cuts",
@@ -450,18 +612,48 @@
         "innerpages images/Defence Packaging-3.webp"
       ],
       "features": [
-        "Heavy-duty impact protection",
-        "Precision-cut foam dunnage",
-        "Antistatic XLPE foam (10⁹ Ohm)",
-        "Moisture & dust resistant",
-        "Reusable rugged crate system",
-        "Designed for critical equipment safety"
+        {
+          "title": "Heavy-duty impact protection",
+          "desc": "Engineered to survive extreme shock and drop tests from military vehicles and transport aircraft."
+        },
+        {
+          "title": "Precision-cut foam dunnage",
+          "desc": "Custom configurations secure heavy munitions, weapon systems, and communication sets."
+        },
+        {
+          "title": "Antistatic XLPE foam (10⁹ Ohm)",
+          "desc": "Provides high-grade, permanent electrostatic shielding for explosive initiators and guidance systems."
+        },
+        {
+          "title": "Moisture & dust resistant",
+          "desc": "Closed-cell foam blocks water ingress and dust contamination in demanding field deployments."
+        },
+        {
+          "title": "Reusable rugged crate system",
+          "desc": "Integrates with ruggedized cases and pallets for long-term storage and repeated deployments."
+        },
+        {
+          "title": "Designed for critical equipment safety",
+          "desc": "Meets strict defense standards for chemical neutrality, preventing corrosion on metals."
+        }
       ],
       "applications": [
-        "Military Hardware",
-        "Ammunition & Explosives",
-        "Sensitive Communication Equipment",
-        "Aerospace Components"
+        {
+          "title": "Military Hardware",
+          "desc": "Provides heavy cushioning for firearms, weapon mounts, and tactical gear."
+        },
+        {
+          "title": "Ammunition & Explosives",
+          "desc": "Secures shells, fuses, and propellants in static-free, impact-resistant compartments."
+        },
+        {
+          "title": "Sensitive Communication Equipment",
+          "desc": "Protects field radios, radar units, and ruggedized laptops from extreme vibrations."
+        },
+        {
+          "title": "Aerospace Components",
+          "desc": "Supports critical aircraft parts and avionics modules during logistics and depot transit."
+        }
       ],
       "specifications": [
         {
@@ -482,14 +674,13 @@
         }
       ]
     },
-
     {
       "id": 10,
       "title": "Gasket",
       "hero": {
         "headline": "Custom Industrial Gaskets",
-        "subtitle": "Dummy gasket sealing solutions for industrial assemblies",
-        "description": "Placeholder content for gasket products used in sealing, spacing, cushioning, and industrial component protection.",
+        "subtitle": "High-performance sealing solutions for industrial assemblies",
+        "description": "Precision-engineered gaskets designed for sealing, spacing, vibration dampening, and industrial component protection.",
         "image": "innerpages images/gaskets.png",
         "cta": [
           "Explore Products",
@@ -497,8 +688,8 @@
         ]
       },
       "about": {
-        "heading": "About Gasket",
-        "content": "This is dummy content for a gasket inner page. The final page can describe custom-cut gasket materials, sealing performance, dimensional accuracy, and application-specific production options."
+        "heading": "About Industrial Gaskets",
+        "content": "Our custom industrial gaskets are fabricated from premium elastomeric and foam materials. Engineered to provide exceptional resistance to dust, moisture, temperature, and chemicals, they ensure long-term sealing reliability and dimensional stability in harsh environments."
       },
       "overviewImage": "innerpages images/gaskets-2.jpg",
       "specsImage": "innerpages images/gaskets-3.jpg",
@@ -515,16 +706,40 @@
         "innerpages images/gaskets.png"
       ],
       "features": [
-        "Custom Cut Profiles",
-        "Sealing Support",
-        "Industrial Fitment",
-        "Material Options"
+        {
+          "title": "Custom Cut Profiles",
+          "desc": "Precision kiss-cut or die-cut profiles to fit exact housing designs and bolt patterns."
+        },
+        {
+          "title": "Sealing Support",
+          "desc": "Provides reliable compression deflection to block dust, air, and moisture."
+        },
+        {
+          "title": "Industrial Fitment",
+          "desc": "Engineered thickness options ensure a perfect fit between mating metal or plastic flanges."
+        },
+        {
+          "title": "Material Options",
+          "desc": "Available in EPDM, Neoprene, Silicone, and Polyethylene foam to match environmental conditions."
+        }
       ],
       "applications": [
-        "Automotive Assemblies",
-        "Industrial Equipment",
-        "Electrical Enclosures",
-        "Machine Components"
+        {
+          "title": "Automotive Assemblies",
+          "desc": "Seals tail lights, side mirrors, HVAC ducts, and engine compartments against water ingress."
+        },
+        {
+          "title": "Industrial Equipment",
+          "desc": "Prevents dust and coolant leaks in machine enclosures and industrial control panels."
+        },
+        {
+          "title": "Electrical Enclosures",
+          "desc": "Meets IP-rated seal requirements to protect wiring, relays, and components from rain."
+        },
+        {
+          "title": "Machine Components",
+          "desc": "Dampens vibration and isolates noise between moving structural plates."
+        }
       ],
       "specifications": [
         {
@@ -533,7 +748,7 @@
         },
         {
           "name": "Density",
-          "value": "80-150 kg/m\u00b3"
+          "value": "80-150 kg/m³"
         },
         {
           "name": "Custom Cutting",

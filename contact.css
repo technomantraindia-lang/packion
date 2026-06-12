@@ -363,48 +363,82 @@ a.cw-detail-value:hover {
     max-width: 480px;
 }
 
-.cw-map-placeholder {
+.cw-address-list {
+    display: grid;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.cw-address-card {
+    padding: 18px 20px;
+    border-left: 3px solid #2b8fd8;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0 8px 8px 0;
+}
+
+.cw-address-label,
+.cw-representative-kicker {
+    display: block;
+    margin-bottom: 7px;
+    color: #70b9ed;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.cw-address-card address {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 15px;
+    font-style: normal;
+    line-height: 1.65;
+}
+
+.cw-representative-card {
     width: 100%;
-    aspect-ratio: 4 / 3;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px dashed rgba(255, 255, 255, 0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+    padding: 42px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* Subtle map grid effect */
-.cw-map-placeholder::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 20px 20px;
+.cw-representative-card h3 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
 }
 
-.cw-map-content {
-    position: relative;
-    z-index: 2;
+.cw-representative-card > p {
+    margin: 0 0 28px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+}
+
+.cw-representative-links {
+    display: grid;
+    gap: 14px;
+}
+
+.cw-representative-links a {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 12px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
 }
 
-.cw-map-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.9);
+.cw-representative-links a:hover {
+    color: #70b9ed;
 }
 
-.cw-map-subtitle {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
+.cw-representative-links svg {
+    color: #70b9ed;
+    flex-shrink: 0;
 }
 
 /* ==========================================================
@@ -438,7 +472,7 @@ a.cw-detail-value:hover {
     .cw-location-section { padding: 64px 24px; }
     .cw-location-inner { grid-template-columns: 1fr; gap: 40px; }
     
-    .cw-map-placeholder { aspect-ratio: 16 / 9; }
+    .cw-representative-card { padding: 32px; }
 }
 
 @media (max-width: 520px) {
