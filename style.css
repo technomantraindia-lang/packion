@@ -1938,6 +1938,10 @@ p.subtitle {
     color: #4da4e0;
 }
 
+.featured-section h2 span {
+    color: #065a98;
+}
+
 .about-left p,
 .process-desc,
 .featured-desc {
@@ -2328,6 +2332,13 @@ p.subtitle {
     padding: 8px 60px 18px;
     cursor: grab;
     scrollbar-width: none;
+    justify-content: center;
+}
+
+@media (max-width: 1670px) {
+    .industries-track {
+        justify-content: flex-start;
+    }
 }
 
 .industries-track::-webkit-scrollbar {
@@ -2537,6 +2548,12 @@ p.subtitle {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     position: relative;
     z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 36px rgba(10, 37, 64, 0.1);
 }
 
 .process-step::before {
@@ -2551,6 +2568,13 @@ p.subtitle {
     line-height: 50px;
     border-radius: 50%;
     margin: 0 auto 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover::before {
+    transform: scale(1.08);
+    background-color: #065a98;
+    box-shadow: 0 0 15px rgba(6, 90, 152, 0.3);
 }
 
 .process-step h4 {

@@ -1219,3 +1219,351 @@
     .aw-step-desc { font-size: 14px; }
     .aw-step-body { padding-bottom: 28px; }
 }
+
+/* ----------------------------------------------------------
+   SECTION: MISSION & VISION
+   Futuristic dark themed layout with premium glassmorphism & gradients
+   ---------------------------------------------------------- */
+.aw-blueprint-mv-section {
+    position: relative;
+    width: 100%;
+    background: #f4f8fc;
+    padding: 120px 40px;
+    overflow: hidden;
+    z-index: 10;
+    border-bottom: 1px solid rgba(138, 168, 190, 0.15);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Blueprint Grid Background */
+.bp-grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(6, 90, 152, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6, 90, 152, 0.04) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: center;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Coordinates/Decor Text */
+.bp-corner-decor {
+    position: absolute;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(6, 90, 152, 0.35);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.bp-tl { top: 24px; left: 24px; }
+.bp-tr { top: 24px; right: 24px; }
+.bp-bl { bottom: 24px; left: 24px; }
+.bp-br { bottom: 24px; right: 24px; }
+
+.bp-mv-container {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    z-index: 5;
+}
+
+.bp-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+/* BG graphics behind columns */
+.bp-col-bg-graphics {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bp-svg-radar, .bp-svg-hex {
+    width: 90%;
+    max-width: 440px;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* Column Header */
+.bp-col-header {
+    position: relative;
+    margin-bottom: 48px;
+    z-index: 5;
+}
+
+.bp-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #065a98;
+    background: rgba(6, 90, 152, 0.05);
+    border: 1px solid rgba(6, 90, 152, 0.12);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: monospace;
+}
+
+.bp-col-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0a2540;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.bp-col-subtitle {
+    font-size: 15px;
+    color: #526474;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+/* Pillars Stack */
+.bp-pillars-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    z-index: 5;
+}
+
+/* Glass Slab design */
+.bp-slab {
+    position: relative;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(138, 168, 190, 0.25);
+    border-radius: 16px;
+    padding: 28px 32px 32px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 
+        0 8px 30px rgba(10, 37, 64, 0.02),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    display: flex;
+    gap: 20px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: default;
+}
+
+/* Indicator strip on left edge */
+.bp-slab-indicator {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    bottom: 24px;
+    width: 4px;
+    border-radius: 0 4px 4px 0;
+    transition: width 0.3s ease;
+}
+
+.bp-glow-cyan {
+    background: #00f0ff;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.bp-glow-blue {
+    background: #065a98;
+    box-shadow: 0 0 10px rgba(6, 90, 152, 0.4);
+}
+
+.bp-slab-num {
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 800;
+    color: rgba(6, 90, 152, 0.3);
+    line-height: 1.5;
+}
+
+.bp-slab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bp-slab-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a2540;
+    margin: 0;
+    letter-spacing: -0.2px;
+}
+
+.bp-slab-content p {
+    font-size: 13.5px;
+    color: #526474;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Small loading-like bar at bottom of card */
+.bp-slab-tech-bar {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 14px;
+    height: 2px;
+    background: rgba(138, 168, 190, 0.12);
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.bp-slab-tech-bar span {
+    display: block;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.bp-glow-cyan + .bp-slab-num + .bp-slab-content + .bp-slab-tech-bar span {
+    background: #00f0ff;
+}
+
+.bp-glow-blue + .bp-slab-num + .bp-slab-content + .bp-slab-tech-bar span {
+    background: #065a98;
+}
+
+/* Slab Hovers */
+.bp-slab:hover {
+    transform: translateY(-5px);
+    background: #ffffff;
+    border-color: rgba(6, 90, 152, 0.22);
+    box-shadow: 
+        0 20px 40px rgba(10, 37, 64, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.bp-slab:hover .bp-slab-indicator {
+    width: 6px;
+}
+
+.bp-slab:hover .bp-slab-num {
+    color: #065a98;
+}
+
+.bp-slab:hover .bp-slab-tech-bar span {
+    transform: scaleX(1);
+}
+
+/* Central Divider decoration */
+.bp-center-divider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bp-divider-line {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    width: 1px;
+    background: linear-gradient(180deg, 
+        rgba(6, 90, 152, 0.02) 0%, 
+        rgba(6, 90, 152, 0.15) 30%, 
+        rgba(6, 90, 152, 0.15) 70%, 
+        rgba(6, 90, 152, 0.02) 100%);
+}
+
+.bp-divider-node {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f4f8fc;
+    border: 2px solid rgba(6, 90, 152, 0.25);
+    z-index: 5;
+}
+
+.node-top { top: 10%; }
+.node-mid { top: 50%; transform: translateY(-50%); border-color: #065a98; background: #00f0ff; box-shadow: 0 0 10px rgba(0, 240, 255, 0.8); }
+.node-bot { bottom: 10%; }
+
+/* Responsive styling */
+@media (max-width: 1100px) {
+    .bp-mv-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .bp-center-divider {
+        display: none;
+    }
+    
+    .bp-column {
+        padding: 0;
+    }
+    
+    .bp-col-bg-graphics {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .aw-blueprint-mv-section {
+        padding: 80px 24px;
+    }
+    .bp-slab {
+        padding: 24px 24px 28px;
+    }
+    .bp-slab-tech-bar {
+        left: 24px;
+        right: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aw-blueprint-mv-section {
+        padding: 60px 16px;
+    }
+    .bp-col-title {
+        font-size: 28px;
+    }
+    .bp-slab {
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px 20px 24px;
+    }
+    .bp-slab-indicator {
+        left: 20px;
+        top: 0;
+        bottom: auto;
+        width: 30px;
+        height: 3px;
+        border-radius: 0 0 4px 4px;
+    }
+    .bp-slab:hover .bp-slab-indicator {
+        width: 40px;
+        height: 4px;
+    }
+    .bp-slab-tech-bar {
+        left: 20px;
+        right: 20px;
+        bottom: 12px;
+    }
+}
+
+
+

@@ -468,83 +468,104 @@ html {
 }
 
 /* ----------------------------------------------------------
-   SECTION 5 — CUSTOM SOLUTION CTA
+   SECTION 5 — OUR ENGINEERING PROCESS
    ---------------------------------------------------------- */
-.pw-cta-section {
+.pw-process-section {
     width: 100%;
-    background: linear-gradient(135deg, #065a98 0%, #043d66 100%);
-    padding: 80px 60px;
-    text-align: center;
+    padding: 100px 60px;
+    background: #fafcfd;
+    border-bottom: 1px solid rgba(138, 168, 190, 0.12);
 }
 
-.pw-cta-inner {
-    max-width: 700px;
+.pw-process-inner {
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.pw-cta-heading {
-    font-size: 32px;
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.pw-cta-desc {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.7;
-    margin-bottom: 32px;
-}
-
-.pw-cta-buttons {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.pw-btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 28px;
-    border-radius: 6px;
-    background: #ffffff;
-    color: #065a98;
-    font-size: 15px;
+.pw-process-tag {
+    display: inline-block;
+    font-size: 11px;
     font-weight: 700;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #065a98;
+    background: rgba(6, 90, 152, 0.06);
+    border: 1px solid rgba(6, 90, 152, 0.12);
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
 }
 
-.pw-btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+.pw-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 20px;
 }
 
-.pw-btn-outline {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 28px;
-    border-radius: 6px;
-    background: transparent;
-    color: #ffffff;
-    border: 1.5px solid rgba(255, 255, 255, 0.5);
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+.pw-process-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 36px 28px;
+    border: 1px solid rgba(138, 168, 190, 0.2);
+    box-shadow: 0 4px 12px rgba(10, 37, 64, 0.02);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.pw-btn-outline:hover {
-    border-color: #ffffff;
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+.pw-process-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #065a98, #6abbee);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
+
+.pw-process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(10, 37, 64, 0.08);
+    border-color: rgba(6, 90, 152, 0.25);
+}
+
+.pw-process-card:hover::before {
+    transform: scaleX(1);
+}
+
+.pw-process-num {
+    font-size: 44px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(6, 90, 152, 0.12);
+    line-height: 1;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.pw-process-card:hover .pw-process-num {
+    color: rgba(6, 90, 152, 0.25);
+}
+
+.pw-process-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: 12px;
+}
+
+.pw-process-text {
+    font-size: 14px;
+    color: #526474;
+    line-height: 1.6;
+}
+
 
 /* ==========================================================
    RESPONSIVE LAYOUT
@@ -559,7 +580,8 @@ html {
     .pw-category-heading { font-size: 32px; }
     .pw-category-header { margin-bottom: 48px; }
     
-    .pw-cta-section { padding: 80px 40px; }
+    .pw-process-section { padding: 80px 40px; }
+    .pw-process-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
 }
 
 @media (max-width: 768px) {
@@ -585,8 +607,7 @@ html {
     
     .pw-products-grid { grid-template-columns: 1fr; gap: 24px; }
     
-    .pw-cta-section { padding: 64px 24px; }
-    .pw-cta-heading { font-size: 28px; }
+    .pw-process-section { padding: 64px 24px; }
 }
 
 @media (max-width: 520px) {
@@ -612,9 +633,7 @@ html {
     .pw-product-title { font-size: 18px; }
     .pw-product-text { font-size: 14px; }
     
-    .pw-cta-section { padding: 48px 16px; }
-    .pw-cta-heading { font-size: 24px; }
-    .pw-cta-desc { font-size: 14px; }
-    .pw-cta-buttons { flex-direction: column; width: 100%; gap: 12px; }
-    .pw-btn-primary, .pw-btn-outline { width: 100%; justify-content: center; }
+    .pw-process-section { padding: 48px 16px; }
+    .pw-process-grid { grid-template-columns: 1fr; gap: 20px; }
+    .pw-process-card { padding: 28px 24px; }
 }
